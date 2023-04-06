@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/map/Map.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/map/Title.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/system/Background.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/system/CodeToon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/Action.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/ActionString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/Display.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/InputColorSup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/MessageSup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/Setup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/Tick.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/TickHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/TickRegistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/animation/Animation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/animation/AnimationColorChooser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/animation/AnimationImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/animation/AnimationSuggest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/animation/AnimationText.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/animation/AnimationsPack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/animation/BackgroundCenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/animation/Button.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/animation/CategoryBackground.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/animation/Center.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/animation/ChangeArgument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/animation/ChangeText.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/animation/CheckButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/animation/Decorate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/animation/DecorateFont.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/animation/DecorateTextLib.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/animation/DisplayColor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/animation/DisplayTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/animation/EndPosition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/animation/Fade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/animation/Frame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/animation/FrameCenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/animation/ImageMaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/animation/MouseAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/animation/Remove.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/animation/TextArea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/animation/image/AbstractImageDecorate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/animation/image/ImageAnimation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/function/IsBoolInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/function/StringSup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/util/lang/LangLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/lang/ja_jp.lang" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2O41NDJL3yxVoxiVaOlwmuH1MaC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/takaf/ClassRoom/ActionSimulater/src/main/java/ayato/util"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\takaf\ClassRoom\ActionSimulater\src\main\java\ayato\util" />
+      <recent name="C:\Users\takaf\ClassRoom\ActionSimulater\src\main\java\ayato" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ayato.map" />
+      <recent name="ayato.util" />
+      <recent name="ayato.util.lang" />
+      <recent name="ayato.util.animation" />
+      <recent name="ayato.system" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ActionSimulater [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.ActionSimulater [dependencies]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="アプリケーションレベル" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="デフォルトタスク">
+      <changelist id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="" />
+      <created>1680804999782</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680804999782</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

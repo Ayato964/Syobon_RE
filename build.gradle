@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'ayato.main'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation 'org.jetbrains:annotations:20.1.0'
+// https://mvnrepository.com/artifact/org.json/json
+    implementation group: 'org.json', name: 'json', version: '20230227'
+}
+
+test {
+    useJUnitPlatform()
+}
