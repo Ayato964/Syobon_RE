@@ -1,1 +1,5 @@
 test.hehe = "こんにちは",
+main.title = "ちょっとそこ通りますよ？",
+main.chooser.1 = "ストーリーモード",
+main.chooser.2 = "カスタムマップ",
+main.chooser.3 = "終わる",

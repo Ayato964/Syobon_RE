@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="" />
+    <list default="true" id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/map/StageChoose.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/map/Title.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/map/Title.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/system/Background.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/system/Background.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ayato/lang/ja_jp.lang" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/lang/ja_jp.lang" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,19 +61,28 @@
       <recent name="ayato.system" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="アプリケーション.Main">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="jbr-17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="ayato.main.Main" />
+      <module name="ActionSimulater.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ActionSimulater [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="dependencies" />
+            <option value="Main" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -75,6 +92,10 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Gradle.ActionSimulater [dependencies]" />
+      <item itemvalue="アプリケーション.Main" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.ActionSimulater [dependencies]" />
