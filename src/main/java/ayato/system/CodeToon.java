@@ -14,4 +14,7 @@ public class CodeToon {
     public static Color textColor = new Color(255, 255, 255);
 
     public static Color textIMPORTANTColor = new Color(255, 120, 0);
+
+    public static int BLOCK_WIDTH = 0;
+    public static int BLOCK_HEIGHT = 0;
 }

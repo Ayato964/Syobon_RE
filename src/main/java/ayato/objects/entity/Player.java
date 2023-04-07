@@ -1,17 +1,21 @@
 package ayato.objects.entity;
 
 import ayato.main.Main;
+import ayato.objects.addtions.Gravity;
+import ayato.objects.addtions.ObjectAddon;
+import ayato.system.CodeToon;
 import com.fasterxml.jackson.databind.JsonNode;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.util.ArrayList;
 
 public class Player extends Entity implements KeyListener {
     public boolean isMove = true;
     public Player(JsonNode info) {
         super(info, 1, 2);
-        speed = 3;
+        speed = 10;
         Main.getInstance().addKeyListener(this);
     }
 
@@ -39,8 +43,7 @@ public class Player extends Entity implements KeyListener {
     }
 
     @Override
-    public void display(Graphics g) {
-        g.setColor(Color.WHITE);
-        g.fillRect(x, y, w * 60, h * 60);
+    protected void setAddons(ArrayList<ObjectAddon> addons) {
+        addons.add(new Gravity());
     }
 }

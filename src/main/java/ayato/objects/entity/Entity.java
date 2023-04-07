@@ -1,7 +1,10 @@
 package ayato.objects.entity;
 
 import ayato.objects.MyObjects;
+import ayato.system.CodeToon;
 import com.fasterxml.jackson.databind.JsonNode;
+
+import java.awt.*;
 
 public abstract class Entity extends MyObjects {
     protected int hp;
@@ -16,4 +19,5 @@ public abstract class Entity extends MyObjects {
     protected int getSpeed(){
         return speed;
     }
+
 }
