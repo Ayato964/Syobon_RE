@@ -3,3 +3,5 @@ main.title = "ちょっとそこ通りますよ？",
 main.chooser.1 = "ストーリーモード",
 main.chooser.2 = "カスタムマップ",
 main.chooser.3 = "終わる",
+
+stagechoose.mes1 = "遊びたいステージを選択してください。",
