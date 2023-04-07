@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="Ver.BEGIN.04.08.1&#10;&#10;jsonをロードする機構を作成。&#10;&#10;背景と、プレイヤーの情報を引き出せるようになった。">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/addtions/Gravity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/addtions/ObjectAddon.java" afterDir="false" />
+    <list default="true" id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="Ver.experiment.04.08.1&#10;&#10;自由落下における物理演算の仕組みを開発">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Air.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Block.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/BlockLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Plane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/MyObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/MyObjects.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ayato/stage/Stage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/stage/Stage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/system/CodeToon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/system/CodeToon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_0/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_0/data.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680896973019</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Ver.experiment.04.08.1&#10;&#10;自由落下における物理演算の仕組みを開発">
+      <created>1680906493397</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680906493397</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -199,6 +207,7 @@
     <MESSAGE value="Ver.BEGIN.04.07.2&#10;&#10;タイトル画面の仮を作成" />
     <MESSAGE value="Ver.BEGIN.04.07.3&#10;&#10;StageChoose.java&#10;ステージを選択する画面を仮決定&#10;&#10;StageLoader.java&#10;ステージをロードする機構を追加&#10;&#10;StagePack.java&#10;ステージをロードした際、このインスタンスが生成され,格納される。" />
     <MESSAGE value="Ver.BEGIN.04.08.1&#10;&#10;jsonをロードする機構を作成。&#10;&#10;背景と、プレイヤーの情報を引き出せるようになった。" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ver.BEGIN.04.08.1&#10;&#10;jsonをロードする機構を作成。&#10;&#10;背景と、プレイヤーの情報を引き出せるようになった。" />
+    <MESSAGE value="Ver.experiment.04.08.1&#10;&#10;自由落下における物理演算の仕組みを開発" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ver.experiment.04.08.1&#10;&#10;自由落下における物理演算の仕組みを開発" />
   </component>
 </project>

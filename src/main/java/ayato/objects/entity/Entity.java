@@ -16,6 +16,16 @@ public abstract class Entity extends MyObjects {
             speed = info.get("speed").asInt();
         }
     }
+
+    @Override
+    public void display(Graphics g) {
+        super.display(g);
+
+        g.setColor(Color.WHITE);
+        g.fillRect((int) x,(int) y, w * CodeToon.BLOCK_WIDTH, h * CodeToon.BLOCK_HEIGHT);
+
+    }
+
     protected int getSpeed(){
         return speed;
     }

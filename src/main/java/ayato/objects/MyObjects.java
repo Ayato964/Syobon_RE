@@ -43,8 +43,6 @@ public abstract class MyObjects implements Display {
     @Override
     public void display(Graphics g) {
         runAddon();
-        g.setColor(Color.WHITE);
-        g.fillRect((int) x,(int) y, w * CodeToon.BLOCK_WIDTH, h * CodeToon.BLOCK_HEIGHT);
     }
     protected abstract void setAddons(ArrayList<ObjectAddon> addons);
 }
