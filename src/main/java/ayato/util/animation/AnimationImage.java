@@ -5,6 +5,7 @@ import ayato.util.animation.image.ImageAnimation;
 import org.jetbrains.annotations.NotNull;
 
 import java.awt.*;
+import java.util.Properties;
 
 public class AnimationImage extends Animation{
     public ImageMaker maker;
@@ -32,6 +33,17 @@ public class AnimationImage extends Animation{
         p.set(this, g);
         return draw();
 
+    }
+    public Animation draw(Image image, int x, int y, int w, int h, Properties p){
+        super.setX(x);
+        super.setY(y);
+        this.w = w;
+        this.h = h;
+        maker = new ImageMaker(image);
+
+        myProp = p;
+        p.set(this, g);
+        return draw();
     }
 
     public int getW() {

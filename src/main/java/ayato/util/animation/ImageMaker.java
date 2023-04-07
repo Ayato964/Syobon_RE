@@ -21,6 +21,10 @@ public class ImageMaker {
         }
 
     }
+    public ImageMaker(Image m){
+        percentImage = (BufferedImage) m;
+        subImage = percentImage;
+    }
     public ImageMaker(String str, int w, int h){
         URL filePath =  getClass().getClassLoader().getResource("assets/codetoon/textures/" + str + ".png");
         try {

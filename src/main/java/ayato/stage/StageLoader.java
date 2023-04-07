@@ -18,6 +18,7 @@ public class StageLoader {
     public static ArrayList<StagePack> STAGES = new ArrayList<>();
 
     public static void update(){
+        STAGES = new ArrayList<>();
         URL url = ClassLoader.getSystemResource("assets/ayato/stage/");
         if(url.toString().indexOf("jar:") != -1) {
             try {
@@ -43,6 +44,7 @@ public class StageLoader {
     }
     private static void createPack(File f){
         StagePack pack = new StagePack();
+        System.out.println(f.getPath());
         //add Main Stage Data
         File data = new File(f.getPath() + "/data.json");
         if(data.isFile()){
@@ -86,7 +88,7 @@ public class StageLoader {
                 }
             }
         }
-
+        STAGES.add(pack);
     }
     private static void createPack(JarFile f){
     }

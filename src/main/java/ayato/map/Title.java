@@ -1,6 +1,7 @@
 package ayato.map;
 
 import ayato.main.Main;
+import ayato.system.Background;
 import ayato.system.CodeToon;
 import ayato.util.animation.Animation;
 import ayato.util.lang.LangLoader;
@@ -10,6 +11,7 @@ import java.awt.*;
 public class Title extends Map{
     @Override
     public void setup(Graphics g) {
+        Background.getInstance().mode = Background.BackgroundMode.SKY;
         Animation.create(g).draw("main.title", 0, 20, new Animation.Properties()
                 .font("", Font.BOLD, 64)
                 .color(Color.GRAY)

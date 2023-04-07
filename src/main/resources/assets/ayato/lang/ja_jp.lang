@@ -5,3 +5,5 @@ main.chooser.2 = "カスタムマップ",
 main.chooser.3 = "終わる",
 
 stagechoose.mes1 = "遊びたいステージを選択してください。",
+stagechoose.end = "タイトルへ戻る",
+stagechoose.enter = "決定",
