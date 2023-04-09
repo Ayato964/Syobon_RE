@@ -35,7 +35,7 @@ public class Player extends Entity implements KeyListener {
             }
             if(e.getKeyCode() == KeyEvent.VK_RIGHT)
                 move(speed);
-            if (e.getKeyCode() == KeyEvent.VK_UP)
+            if (e.getKeyCode() == KeyEvent.VK_UP && !isDownVoid)
                 jump();
         }
     }
@@ -48,14 +48,20 @@ public class Player extends Entity implements KeyListener {
     @Override
     public void display(Graphics g) {
         super.display(g);
-   //     g.fillRect((int) x, (int) y + h * CodeToon.BLOCK_HEIGHT + 10, w * CodeToon.BLOCK_WIDTH, 5);
+        /*
+        g.fillRect((int) x, (int)y + h * CodeToon.BLOCK_HEIGHT ,w* CodeToon.BLOCK_WIDTH,5);
+        g.fillRect((int) x + w * CodeToon.BLOCK_WIDTH + 7, (int)y,5,h * CodeToon.BLOCK_HEIGHT);
+        g.fillRect((int) x - 8, (int)y,5,h * CodeToon.BLOCK_HEIGHT);
+        g.fillRect((int) x, (int)y - 5,w * CodeToon.BLOCK_WIDTH, 5);
+
+         */
     }
 
     @Override
     protected void setAddons(ArrayList<ObjectAddon> addons) {
         addons.add(new Jump());
         addons.add(new Gravity());
-        addons.add(new InSide(() ->(int) x,()-> (int)y + h * CodeToon.BLOCK_HEIGHT + 7,()->w* CodeToon.BLOCK_WIDTH,()->5, i -> {
+        addons.add(new InSide(() ->(int) x,()-> (int)y + h * CodeToon.BLOCK_HEIGHT ,()->w* CodeToon.BLOCK_WIDTH,()->5, i -> {
             isDownVoid = false;
             setY(y-1);
         }, i->isDownVoid = true));
@@ -65,7 +71,7 @@ public class Player extends Entity implements KeyListener {
         addons.add(new InSide(() ->(int) x - 8,()-> (int)y,()->5,()->h * CodeToon.BLOCK_HEIGHT, i -> {
             isLeftVoid = false;
         }, i->isLeftVoid = true));
-        addons.add(new InSide(() ->(int) x,()-> (int)y - 7,()->w * CodeToon.BLOCK_WIDTH,()-> 5, i -> {
+        addons.add(new InSide(() ->(int) x,()-> (int)y - 5,()->w * CodeToon.BLOCK_WIDTH,()-> 5, i -> {
             isUPVoid = false;
         }, i->isUPVoid = true));
     }

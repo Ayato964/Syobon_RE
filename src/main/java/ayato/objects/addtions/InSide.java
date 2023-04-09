@@ -29,7 +29,7 @@ public class InSide implements ObjectAddon{
         Stage stage = (Stage) Main.getInstance().displayMap;
         Rectangle mySelf = new Rectangle(x.getAsInt(), y.getAsInt(), w.getAsInt(), h.getAsInt());
         for(Block b : stage.blocks){
-            Rectangle target1 = new Rectangle((int) b.x, (int) b.y, object.w * CodeToon.BLOCK_WIDTH, object.h * CodeToon.BLOCK_HEIGHT);
+            Rectangle target1 = new Rectangle((int) b.x, (int) b.y, b.w * CodeToon.BLOCK_WIDTH, b.h * CodeToon.BLOCK_HEIGHT);
             if(target1.intersects(mySelf) && !b.equals(object) && b.getClass() != Air.class) {
                 action.action(-1);
                 return;

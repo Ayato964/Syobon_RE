@@ -4,20 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="Ver.experiment.04.08.2&#10;&#10;ブロックの概念を追加&#10;10 * 15のマップの生成に成功した。">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/addtions/InSide.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/addtions/Jump.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/system/Position.java" afterDir="false" />
+    <list default="true" id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="Ver.experiment.04.10.1&#10;&#10;当たり判定の概念を追加した。&#10;ジャンプの判定を追加した。">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/MyObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/MyObjects.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/addtions/Gravity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/addtions/Gravity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Air.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Air.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Block.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/block/BlockLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/BlockLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Plane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Plane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/addtions/InSide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/addtions/InSide.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/addtions/Jump.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/addtions/Jump.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/stage/Stage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/stage/Stage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_0/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_0/data.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -201,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680911065057</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Ver.experiment.04.10.1&#10;&#10;当たり判定の概念を追加した。&#10;ジャンプの判定を追加した。">
+      <created>1681080029835</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681080029835</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -221,7 +219,8 @@
     <MESSAGE value="Ver.BEGIN.04.08.1&#10;&#10;jsonをロードする機構を作成。&#10;&#10;背景と、プレイヤーの情報を引き出せるようになった。" />
     <MESSAGE value="Ver.experiment.04.08.1&#10;&#10;自由落下における物理演算の仕組みを開発" />
     <MESSAGE value="Ver.experiment.04.08.2&#10;&#10;ブロックの概念を追加&#10;10 * 15のマップの生成に成功した。" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ver.experiment.04.08.2&#10;&#10;ブロックの概念を追加&#10;10 * 15のマップの生成に成功した。" />
+    <MESSAGE value="Ver.experiment.04.10.1&#10;&#10;当たり判定の概念を追加した。&#10;ジャンプの判定を追加した。" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ver.experiment.04.10.1&#10;&#10;当たり判定の概念を追加した。&#10;ジャンプの判定を追加した。" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ActionSimulater$Main.ic" NAME="Main のカバレッジ結果" MODIFIED="1681066861805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
