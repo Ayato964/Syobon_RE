@@ -12,7 +12,7 @@ public class Plane extends Block{
 
     @Override
     protected void setAddons(ArrayList<ObjectAddon> addons) {
-
+        super.setAddons(addons);
     }
 
 }

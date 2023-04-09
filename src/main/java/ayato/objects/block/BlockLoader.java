@@ -13,9 +13,10 @@ public class BlockLoader {
         JsonNode stage = node.get("stage").get("map");
         int x = 0;
         int y = 0;
+        int c = 0;
         for(int i = 0; i < stage.size(); i ++){
             blocks.add(getBlock(stage.get(i).asInt(), x * CodeToon.BLOCK_WIDTH, y * CodeToon.BLOCK_HEIGHT));
-            x ++;
+            x += 1;
             if(x >= w){
                 x = 0;
                 y ++;

@@ -13,7 +13,6 @@ public class Air extends Block{
 
     @Override
     protected void setAddons(ArrayList<ObjectAddon> addons) {
-
     }
 
     @Override

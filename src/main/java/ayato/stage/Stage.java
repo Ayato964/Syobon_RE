@@ -15,8 +15,8 @@ import java.util.ArrayList;
 public class Stage extends Map {
     private final StagePack pack;
     private final JsonNode stage;
-    private Player player;
-    private ArrayList<Block> blocks;
+    public Player player;
+    public ArrayList<Block> blocks;
     public Stage(StagePack pack, JsonNode main){
         this.pack = pack;
         stage = main;

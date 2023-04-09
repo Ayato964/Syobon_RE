@@ -11,7 +11,7 @@ public abstract class Entity extends MyObjects {
     protected int speed;
 
     public Entity(JsonNode info, int w, int h) {
-        super(info.get("x").asInt(), info.get("y").asInt(), w, h);
+        super(info.get("x").asInt() * CodeToon.BLOCK_WIDTH, info.get("y").asInt() * CodeToon.BLOCK_HEIGHT, w, h);
         if(info.get("speed") != null){
             speed = info.get("speed").asInt();
         }

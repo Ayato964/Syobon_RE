@@ -11,8 +11,12 @@ public class Gravity implements ObjectAddon{
     }
     @Override
     public void application(MyObjects object) {
-        time ++;
-        float v = g * time / 10;
-        object.y += v;
+        if(object.isDownVoid && !object.isJumped) {
+            time++;
+            float v = g * time / 10;
+            object.setY(object.y + v);
+        }else {
+            time = 0;
+        }
     }
 }

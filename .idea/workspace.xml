@@ -4,14 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="Ver.experiment.04.08.1&#10;&#10;自由落下における物理演算の仕組みを開発">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Air.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Block.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/BlockLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Plane.java" afterDir="false" />
+    <list default="true" id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="Ver.experiment.04.08.2&#10;&#10;ブロックの概念を追加&#10;10 * 15のマップの生成に成功した。">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/addtions/InSide.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/addtions/Jump.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/system/Position.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/MyObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/MyObjects.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/addtions/Gravity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/addtions/Gravity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Air.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Air.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Block.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/block/BlockLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/BlockLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Plane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Plane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ayato/stage/Stage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/stage/Stage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_0/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_0/data.json" afterDir="false" />
     </list>
@@ -189,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680906493397</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Ver.experiment.04.08.2&#10;&#10;ブロックの概念を追加&#10;10 * 15のマップの生成に成功した。">
+      <created>1680911065057</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680911065057</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,6 +220,10 @@
     <MESSAGE value="Ver.BEGIN.04.07.3&#10;&#10;StageChoose.java&#10;ステージを選択する画面を仮決定&#10;&#10;StageLoader.java&#10;ステージをロードする機構を追加&#10;&#10;StagePack.java&#10;ステージをロードした際、このインスタンスが生成され,格納される。" />
     <MESSAGE value="Ver.BEGIN.04.08.1&#10;&#10;jsonをロードする機構を作成。&#10;&#10;背景と、プレイヤーの情報を引き出せるようになった。" />
     <MESSAGE value="Ver.experiment.04.08.1&#10;&#10;自由落下における物理演算の仕組みを開発" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ver.experiment.04.08.1&#10;&#10;自由落下における物理演算の仕組みを開発" />
+    <MESSAGE value="Ver.experiment.04.08.2&#10;&#10;ブロックの概念を追加&#10;10 * 15のマップの生成に成功した。" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ver.experiment.04.08.2&#10;&#10;ブロックの概念を追加&#10;10 * 15のマップの生成に成功した。" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ActionSimulater$Main.ic" NAME="Main のカバレッジ結果" MODIFIED="1681066861805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
