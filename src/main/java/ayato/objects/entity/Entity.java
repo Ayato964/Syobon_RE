@@ -27,7 +27,8 @@ public abstract class Entity extends MyObjects {
         super.display(g);
 
         g.setColor(Color.WHITE);
-        g.fillRect((int) x,(int) y, w * CodeToon.BLOCK_WIDTH, h * CodeToon.BLOCK_HEIGHT);
+        //g.fillRect((int) x,(int) y, w * CodeToon.BLOCK_WIDTH, h * CodeToon.BLOCK_HEIGHT);
+        g.drawImage(texture, (int) x, (int) y, w * CodeToon.BLOCK_WIDTH, h * CodeToon.BLOCK_HEIGHT, null);
         if(y >= Main.DESCTOP_BOUNDS.height){
             hp --;
         }
@@ -36,5 +37,4 @@ public abstract class Entity extends MyObjects {
     protected int getSpeed(){
         return speed;
     }
-
 }

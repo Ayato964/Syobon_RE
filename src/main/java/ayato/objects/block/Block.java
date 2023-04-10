@@ -16,11 +16,14 @@ public abstract class Block extends MyObjects {
     @Override
     public void display(Graphics g) {
         super.display(g);
-
+/*
         g.setColor(Color.WHITE);
         g.fillRect((int) x,(int) y, w * CodeToon.BLOCK_WIDTH, h * CodeToon.BLOCK_HEIGHT);
         g.setColor(Color.BLACK);
         g.drawRect((int) x, (int) y, w * CodeToon.BLOCK_WIDTH, h * CodeToon.BLOCK_HEIGHT);
+
+ */
+        g.drawImage(texture, (int) x,(int) y, w * CodeToon.BLOCK_WIDTH, h * CodeToon.BLOCK_HEIGHT, null);
     }
 
     @Override

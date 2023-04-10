@@ -7,11 +7,13 @@ import ayato.objects.addtions.*;
 import ayato.stage.Stage;
 import ayato.system.CodeToon;
 import ayato.system.KeyController;
+import ayato.util.animation.ImageMaker;
 import com.fasterxml.jackson.databind.JsonNode;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.function.IntSupplier;
 
@@ -20,6 +22,7 @@ public class Player extends Entity {
     public Player(JsonNode info) {
         super(info, 1, 2);
         speed = 10;
+        texture = (BufferedImage) new ImageMaker("mob/player_left", 64, 128).get();
         KeyController.generate();
     }
 
@@ -42,6 +45,8 @@ public class Player extends Entity {
                 move(-1 * speed);
         }
     }
+
+
 
     @Override
     protected void setAddons(ArrayList<ObjectAddon> addons) {

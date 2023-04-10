@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="Ver.experiment.04.10.4&#10;&#10;テクスチャを追加">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/map/Continue.java" afterDir="false" />
+    <list default="true" id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="Ver.experiment.04.10.5&#10;&#10;ジャンプ機能をリニューアル&#10;マップの範囲外に出たとき、ゲームオーバーになる機能を追加&#10;ライフを追加">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/block/template.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/MyObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/MyObjects.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/addtions/Jump.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/addtions/Jump.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Block.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Plane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Plane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Entity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/stage/Stage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/stage/Stage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/system/KeyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/system/KeyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/util/animation/ImageMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/util/animation/ImageMaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ayato/lang/ja_jp.lang" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/lang/ja_jp.lang" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_0/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_0/data.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,8 +75,8 @@
       <recent name="C:\Users\takaf\ClassRoom\ActionSimulater\src\main\java\ayato" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\takaf\ClassRoom\Syobon_RE\src\main\resources\assets\ayato\mob" />
       <recent name="C:\Users\takaf\ClassRoom\Syobon_RE\src\main\resources\assets\ayato\block" />
+      <recent name="C:\Users\takaf\ClassRoom\Syobon_RE\src\main\resources\assets\ayato\mob" />
       <recent name="C:\Users\takaf\ClassRoom\Syobon_RE\src\main\resources\assets\ayato\stage" />
       <recent name="C:\Users\takaf\ClassRoom\Syobon_RE\src\main\resources\assets\ayato\stage\0\asset\icon" />
       <recent name="C:\Users\takaf\ClassRoom\Syobon_RE\src\main\resources\assets\ayato\stage\0\asset\" />
@@ -224,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681134772369</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Ver.experiment.04.10.5&#10;&#10;ジャンプ機能をリニューアル&#10;マップの範囲外に出たとき、ゲームオーバーになる機能を追加&#10;ライフを追加">
+      <created>1681137335627</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1681137335627</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -248,7 +256,8 @@
     <MESSAGE value="Ver.experiment.04.10.2&#10;&#10;当たり判定の物理演算のバグを修正" />
     <MESSAGE value="Ver.experiment.04.10.3&#10;&#10;プレイヤーのキー操作の改善" />
     <MESSAGE value="Ver.experiment.04.10.4&#10;&#10;テクスチャを追加" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ver.experiment.04.10.4&#10;&#10;テクスチャを追加" />
+    <MESSAGE value="Ver.experiment.04.10.5&#10;&#10;ジャンプ機能をリニューアル&#10;マップの範囲外に出たとき、ゲームオーバーになる機能を追加&#10;ライフを追加" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ver.experiment.04.10.5&#10;&#10;ジャンプ機能をリニューアル&#10;マップの範囲外に出たとき、ゲームオーバーになる機能を追加&#10;ライフを追加" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ActionSimulater$Main.ic" NAME="Main のカバレッジ結果" MODIFIED="1681066861805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

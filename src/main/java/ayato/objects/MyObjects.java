@@ -4,8 +4,11 @@ import ayato.main.Main;
 import ayato.objects.addtions.ObjectAddon;
 import ayato.system.CodeToon;
 import ayato.util.Display;
+import ayato.util.animation.ImageMaker;
 
+import javax.imageio.ImageIO;
 import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 
 public abstract class MyObjects implements Display {
@@ -20,6 +23,7 @@ public abstract class MyObjects implements Display {
     public boolean isRightVoid = true;
     public boolean isLeftVoid = true;
     public boolean isJumped = false;
+    public BufferedImage texture;
 
     private ArrayList<ObjectAddon> addons;
     public MyObjects(int x, int y, int w, int h){
@@ -30,6 +34,7 @@ public abstract class MyObjects implements Display {
         centerX = x + w / 2;
         centerY = y + h / 2;
         addons = new ArrayList<>();
+        texture =(BufferedImage) new ImageMaker("block/template", 64, 64).get();
         setAddons(addons);
     }
     protected void move(int moveX){
