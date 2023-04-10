@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="Ver.experiment.04.10.5&#10;&#10;ジャンプ機能をリニューアル&#10;マップの範囲外に出たとき、ゲームオーバーになる機能を追加&#10;ライフを追加">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/block/template.png" afterDir="false" />
+    <list default="true" id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="Ver.experiment.04.11.1&#10;&#10;テクスチャを追加">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/MyObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/MyObjects.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/addtions/Jump.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/addtions/Jump.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Block.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Plane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Plane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Entity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_0/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_0/data.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681137335627</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Ver.experiment.04.11.1&#10;&#10;テクスチャを追加">
+      <created>1681146104272</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1681146104272</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -257,7 +257,8 @@
     <MESSAGE value="Ver.experiment.04.10.3&#10;&#10;プレイヤーのキー操作の改善" />
     <MESSAGE value="Ver.experiment.04.10.4&#10;&#10;テクスチャを追加" />
     <MESSAGE value="Ver.experiment.04.10.5&#10;&#10;ジャンプ機能をリニューアル&#10;マップの範囲外に出たとき、ゲームオーバーになる機能を追加&#10;ライフを追加" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ver.experiment.04.10.5&#10;&#10;ジャンプ機能をリニューアル&#10;マップの範囲外に出たとき、ゲームオーバーになる機能を追加&#10;ライフを追加" />
+    <MESSAGE value="Ver.experiment.04.11.1&#10;&#10;テクスチャを追加" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ver.experiment.04.11.1&#10;&#10;テクスチャを追加" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ActionSimulater$Main.ic" NAME="Main のカバレッジ結果" MODIFIED="1681066861805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

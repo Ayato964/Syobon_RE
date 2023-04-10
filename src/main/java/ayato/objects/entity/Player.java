@@ -19,11 +19,16 @@ import java.util.function.IntSupplier;
 
 public class Player extends Entity {
     public boolean isMove = true;
+    private BufferedImage texture_Left;
+    private BufferedImage texture_Right;
     public Player(JsonNode info) {
         super(info, 1, 2);
         speed = 10;
-        texture = (BufferedImage) new ImageMaker("mob/player_left", 64, 128).get();
+        texture_Left = (BufferedImage) new ImageMaker("mob/player_left", 64, 128).get();
+        texture_Right = (BufferedImage) new ImageMaker("mob/player_right", 64, 128).get();
+        texture = texture_Left;
         KeyController.generate();
+
     }
 
     @Override
@@ -39,10 +44,14 @@ public class Player extends Entity {
         if(isMove){
             if(KeyController.get(KeyEvent.VK_UP) && !isDownVoid)
                 jump();
-            if(KeyController.get(KeyEvent.VK_RIGHT))
+            if(KeyController.get(KeyEvent.VK_RIGHT)) {
                 move(speed);
-            if(KeyController.get(KeyEvent.VK_LEFT))
+                texture = texture_Right;
+            }
+            if(KeyController.get(KeyEvent.VK_LEFT)) {
                 move(-1 * speed);
+                texture = texture_Left;
+            }
         }
     }
 
@@ -67,7 +76,7 @@ public class Player extends Entity {
         }, i->isUPVoid = true));
         addons.add(new HPController(null, null, i->{
             try {
-                Thread.sleep(3000);
+                Thread.sleep(2000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
