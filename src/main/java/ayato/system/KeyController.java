@@ -15,6 +15,8 @@ public class KeyController implements KeyListener {
         KEY.put(KeyEvent.VK_DOWN, false);
         KEY.put(KeyEvent.VK_LEFT, false);
         KEY.put(KeyEvent.VK_RIGHT, false);
+        KEY.put(KeyEvent.VK_SPACE, false);
+        KEY.put(KeyEvent.VK_ENTER, false);
         Main.getInstance().addKeyListener(INSTANCE);
     }
     public static boolean get(int key){

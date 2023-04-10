@@ -10,10 +10,10 @@ public class ImageMaker {
     public Image subImage;
     public BufferedImage percentImage;
     public ImageMaker(String str){
-        URL filePath =  getClass().getClassLoader().getResource("assets/codetoon/textures/" + str + ".png");
+        URL filePath =  getClass().getClassLoader().getResource("assets/ayato/" + str + ".png");
         try {
             percentImage = ImageIO.read(filePath);
-            subImage = percentImage.getSubimage(0, 0, 120, 120);
+            subImage = percentImage.getSubimage(0, 0, 64, 64);
 
 
         } catch (IOException e) {
@@ -26,7 +26,7 @@ public class ImageMaker {
         subImage = percentImage;
     }
     public ImageMaker(String str, int w, int h){
-        URL filePath =  getClass().getClassLoader().getResource("assets/codetoon/textures/" + str + ".png");
+        URL filePath =  getClass().getClassLoader().getResource("assets/ayato/" + str + ".png");
         try {
             percentImage = ImageIO.read(filePath);
             subImage = percentImage.getSubimage(0, 0, w, h);

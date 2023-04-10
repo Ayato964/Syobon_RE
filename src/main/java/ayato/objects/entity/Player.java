@@ -1,8 +1,10 @@
 package ayato.objects.entity;
 
 import ayato.main.Main;
+import ayato.map.Continue;
 import ayato.map.Title;
 import ayato.objects.addtions.*;
+import ayato.stage.Stage;
 import ayato.system.CodeToon;
 import ayato.system.KeyController;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -64,7 +66,8 @@ public class Player extends Entity {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            Main.getInstance().run(new Title());
+            Stage s = ((Stage) Main.getInstance().displayMap);
+            Main.getInstance().run(new Continue(s.reaming, s.pack, s.stage));
 
         }));
     }

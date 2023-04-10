@@ -13,11 +13,11 @@ import java.awt.*;
 import java.util.ArrayList;
 
 public class Stage extends Map {
-    private final StagePack pack;
-    private final JsonNode stage;
+    public final StagePack pack;
+    public final JsonNode stage;
     public Player player;
     public ArrayList<Block> blocks;
-    private int reaming;
+    public int reaming;
     public Stage(StagePack pack, JsonNode main){
         this.pack = pack;
         stage = main;
