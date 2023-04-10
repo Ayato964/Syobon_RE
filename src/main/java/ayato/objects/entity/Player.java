@@ -6,6 +6,7 @@ import ayato.objects.addtions.InSide;
 import ayato.objects.addtions.Jump;
 import ayato.objects.addtions.ObjectAddon;
 import ayato.system.CodeToon;
+import ayato.system.KeyController;
 import com.fasterxml.jackson.databind.JsonNode;
 
 import java.awt.*;
@@ -14,35 +15,12 @@ import java.awt.event.KeyListener;
 import java.util.ArrayList;
 import java.util.function.IntSupplier;
 
-public class Player extends Entity implements KeyListener {
+public class Player extends Entity {
     public boolean isMove = true;
     public Player(JsonNode info) {
         super(info, 1, 2);
         speed = 10;
-        Main.getInstance().addKeyListener(this);
-    }
-
-    @Override
-    public void keyTyped(KeyEvent e) {
-
-    }
-
-    @Override
-    public void keyPressed(KeyEvent e) {
-        if(isMove){
-            if(e.getKeyCode() == KeyEvent.VK_LEFT) {
-                move(-1 * speed);
-            }
-            if(e.getKeyCode() == KeyEvent.VK_RIGHT)
-                move(speed);
-            if (e.getKeyCode() == KeyEvent.VK_UP && !isDownVoid)
-                jump();
-        }
-    }
-
-    @Override
-    public void keyReleased(KeyEvent e) {
-
+        KeyController.generate();
     }
 
     @Override
@@ -55,6 +33,14 @@ public class Player extends Entity implements KeyListener {
         g.fillRect((int) x, (int)y - 5,w * CodeToon.BLOCK_WIDTH, 5);
 
          */
+        if(isMove){
+            if(KeyController.get(KeyEvent.VK_UP) && !isDownVoid)
+                jump();
+            if(KeyController.get(KeyEvent.VK_RIGHT))
+                move(speed);
+            if(KeyController.get(KeyEvent.VK_LEFT))
+                move(-1 * speed);
+        }
     }
 
     @Override

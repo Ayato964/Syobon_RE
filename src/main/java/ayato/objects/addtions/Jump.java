@@ -11,7 +11,7 @@ public class Jump implements ObjectAddon{
         if(object.isJumped && object.isUPVoid){
                 time++;
                 float v1 = (float) (v0 * (time / 7) - 0.5 * gravity * Math.pow(time / 7, 2));
-                System.out.println(v1);
+                //System.out.println(v1);
                 object.setY(object.y - v1);
                 if (v1 < 2) {
                     time = 10;

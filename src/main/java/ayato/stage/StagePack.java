@@ -19,7 +19,7 @@ public class StagePack {
     private BufferedImage icon;
     private JsonNode mainStage;
     public void view(Graphics g, int x, int y){
-        Animation.create(g).draw(mainStage.get("meta").get("name").asText(), x + 60, y, new Animation.Properties().font("", 0, 64)
+        Animation.create(g).draw(mainStage.get("meta").get("name").asText(), x + 20, y, new Animation.Properties().font("", 0, 64)
                 .background(CodeToon.categoryBg, x, y, 120, 80)
                 .color(CodeToon.textColor)
                 .remove(()->!isVisible)
