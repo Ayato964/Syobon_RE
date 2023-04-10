@@ -1,5 +1,6 @@
 package ayato.objects.entity;
 
+import ayato.main.Main;
 import ayato.objects.MyObjects;
 import ayato.system.CodeToon;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -7,14 +8,18 @@ import com.fasterxml.jackson.databind.JsonNode;
 import java.awt.*;
 
 public abstract class Entity extends MyObjects {
-    protected int hp;
+    public int hp, mHp = 1;
     protected int speed;
 
     public Entity(JsonNode info, int w, int h) {
+
         super(info.get("x").asInt() * CodeToon.BLOCK_WIDTH, info.get("y").asInt() * CodeToon.BLOCK_HEIGHT, w, h);
         if(info.get("speed") != null){
             speed = info.get("speed").asInt();
         }
+        mHp = 1;
+        hp = mHp;
+
     }
 
     @Override
@@ -23,7 +28,9 @@ public abstract class Entity extends MyObjects {
 
         g.setColor(Color.WHITE);
         g.fillRect((int) x,(int) y, w * CodeToon.BLOCK_WIDTH, h * CodeToon.BLOCK_HEIGHT);
-
+        if(y >= Main.DESCTOP_BOUNDS.height){
+            hp --;
+        }
     }
 
     protected int getSpeed(){

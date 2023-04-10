@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="Ver.experiment.04.10.2&#10;&#10;当たり判定の物理演算のバグを修正">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/system/KeyController.java" afterDir="false" />
+    <list default="true" id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="Ver.experiment.04.10.3&#10;&#10;プレイヤーのキー操作の改善">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/addtions/HPController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Entity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/stage/StagePack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/stage/StagePack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_0/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_0/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_1/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_1/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/stage/Stage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/stage/Stage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681081192683</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Ver.experiment.04.10.3&#10;&#10;プレイヤーのキー操作の改善">
+      <created>1681126143058</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1681126143058</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -229,7 +235,8 @@
     <MESSAGE value="Ver.experiment.04.08.2&#10;&#10;ブロックの概念を追加&#10;10 * 15のマップの生成に成功した。" />
     <MESSAGE value="Ver.experiment.04.10.1&#10;&#10;当たり判定の概念を追加した。&#10;ジャンプの判定を追加した。" />
     <MESSAGE value="Ver.experiment.04.10.2&#10;&#10;当たり判定の物理演算のバグを修正" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ver.experiment.04.10.2&#10;&#10;当たり判定の物理演算のバグを修正" />
+    <MESSAGE value="Ver.experiment.04.10.3&#10;&#10;プレイヤーのキー操作の改善" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ver.experiment.04.10.3&#10;&#10;プレイヤーのキー操作の改善" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ActionSimulater$Main.ic" NAME="Main のカバレッジ結果" MODIFIED="1681066861805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

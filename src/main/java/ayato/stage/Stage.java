@@ -17,9 +17,16 @@ public class Stage extends Map {
     private final JsonNode stage;
     public Player player;
     public ArrayList<Block> blocks;
+    private int reaming;
     public Stage(StagePack pack, JsonNode main){
         this.pack = pack;
         stage = main;
+        reaming = 5;
+    }
+    public Stage(StagePack pack, JsonNode main, int remaining){
+        this(pack, main);
+        this.reaming = remaining;
+
     }
 
     @Override

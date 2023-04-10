@@ -1,10 +1,8 @@
 package ayato.objects.entity;
 
 import ayato.main.Main;
-import ayato.objects.addtions.Gravity;
-import ayato.objects.addtions.InSide;
-import ayato.objects.addtions.Jump;
-import ayato.objects.addtions.ObjectAddon;
+import ayato.map.Title;
+import ayato.objects.addtions.*;
 import ayato.system.CodeToon;
 import ayato.system.KeyController;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -51,14 +49,23 @@ public class Player extends Entity {
             isDownVoid = false;
             setY(y-1);
         }, i->isDownVoid = true));
-        addons.add(new InSide(() ->(int) x + w * CodeToon.BLOCK_WIDTH + 7,()-> (int)y,()->5,()->h * CodeToon.BLOCK_HEIGHT, i -> {
+        addons.add(new InSide(() ->(int) x + w * CodeToon.BLOCK_WIDTH + 7,()-> (int)y,()->5,()->h * CodeToon.BLOCK_HEIGHT - 10, i -> {
             isRightVoid = false;
         }, i->isRightVoid = true));
-        addons.add(new InSide(() ->(int) x - 8,()-> (int)y,()->5,()->h * CodeToon.BLOCK_HEIGHT, i -> {
+        addons.add(new InSide(() ->(int) x - 8,()-> (int)y,()->5,()->h * CodeToon.BLOCK_HEIGHT - 10, i -> {
             isLeftVoid = false;
         }, i->isLeftVoid = true));
         addons.add(new InSide(() ->(int) x,()-> (int)y - 5,()->w * CodeToon.BLOCK_WIDTH,()-> 5, i -> {
             isUPVoid = false;
         }, i->isUPVoid = true));
+        addons.add(new HPController(null, null, i->{
+            try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+            Main.getInstance().run(new Title());
+
+        }));
     }
 }
