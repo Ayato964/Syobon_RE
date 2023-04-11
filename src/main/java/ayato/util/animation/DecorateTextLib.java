@@ -2,7 +2,7 @@ package ayato.util.animation;
 
 import java.awt.*;
 
-public class DecorateTextLib {
+public abstract class DecorateTextLib {
 
     protected int getTextWidth(String mes, Graphics g) {
         int len = 0;

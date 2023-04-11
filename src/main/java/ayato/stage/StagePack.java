@@ -25,8 +25,8 @@ public class StagePack {
                 .remove(()->!isVisible)
         );
         AnimationImage.createImage(g).draw(icon, x, y + 10, 50, 50, new AnimationImage.PropertiesImage().of(500, 500).remove(() ->!isVisible));
-        Animation.create(g).draw(mainStage.get("meta").get("overview").asText(), x + 60, y + 20, new Animation.Properties()
-                .font("", Font.PLAIN, 32).remove(()->!isVisible));
+        Animation.create(g).draw(mainStage.get("meta").get("overview").asText(), x + 55, y + 20, new Animation.Properties()
+                .font("", Font.PLAIN, 32).remove(()->!isVisible).width(65));
     }
     public void addMainData(JsonNode o){
         mainStage = o;

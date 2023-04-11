@@ -293,6 +293,25 @@ public abstract class Animation implements Serializable {
             prop.add(new Remove(sup));
             return this;
         }
+
+        public Properties width(int i) {
+            prop.add(new Width(i));
+            return this;
+        }
+
+        public void removeAddon(Decorate d) {
+            for(int i = 0; i < prop.size(); i ++){
+                if(prop.get(i).equals(d)){
+                    prop.remove(d);
+                    return;
+                }
+            }
+        }
+
+        public Properties addAddons(ArrayList<Decorate> prop) {
+            this.prop.addAll(prop);
+            return this;
+        }
     }
 
 }
