@@ -24,7 +24,6 @@ public class Player extends Entity {
         speed = 10;
         texture_Left = (BufferedImage) new ImageMaker("mob/player_left", 64, 128).get();
         texture_Right = (BufferedImage) new ImageMaker("mob/player_right", 64, 128).get();
-        texture = texture_Left;
         KeyController.generate();
 
         stage = (Stage) Main.getInstance().displayMap;
@@ -82,5 +81,10 @@ public class Player extends Entity {
             Main.getInstance().run(new Continue(stage.reaming, stage.pack, stage.stage));
 
         }));
+    }
+
+    @Override
+    protected ImageMaker setTexture() {
+        return new ImageMaker("mob/player_left", 64, 128);
     }
 }

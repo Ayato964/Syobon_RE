@@ -11,6 +11,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public abstract class Block extends MyObjects {
     private Stage stage;
@@ -35,8 +36,18 @@ public abstract class Block extends MyObjects {
             g.drawImage(texture, (int) x + stage.stageX,(int) y + stage.stageY, w * CodeToon.BLOCK_WIDTH, h * CodeToon.BLOCK_HEIGHT, null);
 
     }
+    protected void replaceBlock(int id){
+        Block b = BlockLoader.getBlock(id,(int) x,(int) y);
+        Stage s = (Stage) Main.getInstance().displayMap;
+        s.endingTask(i -> {
+            for(int c = 0; i < s.blocks.size(); c ++){
+                if(s.blocks.get(c).equals(this)){
+                    s.blocks.remove(c);
+                    s.blocks.add(c, b);
+                    return;
+                }
+            }
+        });
 
-    @Override
-    protected void setAddons(ArrayList<ObjectAddon> addons) {
     }
 }

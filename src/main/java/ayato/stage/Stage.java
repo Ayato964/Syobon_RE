@@ -7,6 +7,7 @@ import ayato.objects.block.BlockLoader;
 import ayato.objects.entity.Player;
 import ayato.system.Background;
 import ayato.system.CodeToon;
+import ayato.util.Action;
 import com.fasterxml.jackson.databind.JsonNode;
 
 import java.awt.*;
@@ -19,6 +20,7 @@ public class Stage extends Map {
     public final JsonNode stage;
     public Player player;
     public ArrayList<Block> blocks;
+    private ArrayList<Action> task = new ArrayList<>();
     public int reaming;
     public Stage(StagePack pack, JsonNode main){
         this.pack = pack;
@@ -53,7 +55,13 @@ public class Stage extends Map {
             b.display(g);
         }
         player.display(g);
-
+        if(!task.isEmpty()) {
+            for (Action a : task) a.action(-1);
+            task = new ArrayList<>();
+        }
+    }
+    public void endingTask(Action action){
+        task.add(action);
     }
     private Background.BackgroundMode getMode(){
         return switch (stage.get("stage").get("background").asInt()){

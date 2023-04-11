@@ -35,7 +35,7 @@ public abstract class MyObjects implements Display {
         centerX = x + w / 2;
         centerY = y + h / 2;
         addons = new ArrayList<>();
-        texture =(BufferedImage) new ImageMaker("block/template", 64, 64).get();
+        texture = (BufferedImage) (setTexture() == null ?  new ImageMaker("block/template", 64, 64).get() : setTexture().get());
         setAddons(addons);
     }
     protected void move(int moveX){
@@ -72,4 +72,5 @@ public abstract class MyObjects implements Display {
         runAddon();
     }
     protected abstract void setAddons(ArrayList<ObjectAddon> addons);
+    protected abstract ImageMaker setTexture();
 }

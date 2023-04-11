@@ -25,10 +25,12 @@ public class BlockLoader {
 
         return blocks;
     }
-    private static Block getBlock(int id, int x, int y){
+    public static Block getBlock(int id, int x, int y){
         return switch (id){
             default -> new Air(x, y);
             case 1 -> new Plane(x, y);
+            case 2-> new Renga(x, y);
+            case 3->new Thorn(x, y);
         };
     }
 
