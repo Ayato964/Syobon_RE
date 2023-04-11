@@ -16,6 +16,7 @@ public class InSide implements ObjectAddon{
     private Action action;
     private Action notAction;
     private IntSupplier x, y, w, h;
+    Stage stage;
     public InSide(IntSupplier x, IntSupplier y, IntSupplier w, IntSupplier h, Action a, Action b){
         this.x = x;
         this.y = y;
@@ -23,10 +24,10 @@ public class InSide implements ObjectAddon{
         this.h = h;
         action = a;
         notAction = b;
+        stage = (Stage) Main.getInstance().displayMap;
     }
     @Override
     public void application(MyObjects object) {
-        Stage stage = (Stage) Main.getInstance().displayMap;
         Rectangle mySelf = new Rectangle(x.getAsInt(), y.getAsInt(), w.getAsInt(), h.getAsInt());
         for(Block b : stage.blocks){
             Rectangle target1 = new Rectangle((int) b.x, (int) b.y, b.w * CodeToon.BLOCK_WIDTH, b.h * CodeToon.BLOCK_HEIGHT);

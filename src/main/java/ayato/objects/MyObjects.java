@@ -2,6 +2,7 @@ package ayato.objects;
 
 import ayato.main.Main;
 import ayato.objects.addtions.ObjectAddon;
+import ayato.objects.block.Block;
 import ayato.system.CodeToon;
 import ayato.util.Display;
 import ayato.util.animation.ImageMaker;
@@ -40,11 +41,11 @@ public abstract class MyObjects implements Display {
     protected void move(int moveX){
             float tempX = x + moveX;
             if((x > tempX && isLeftVoid) || (x < tempX && isRightVoid))
-            if (tempX > 0) {
-                if (tempX + w * CodeToon.BLOCK_WIDTH < Main.DESCTOP_BOUNDS.width) {
-                    setX(tempX);
+                if (tempX > - CodeToon.BLOCK_WIDTH * 2) {
+                    if (tempX + w * CodeToon.BLOCK_WIDTH < Main.DESCTOP_BOUNDS.width || this instanceof Block) {
+                        setX(tempX);
+                    }
                 }
-            }
     }
 
     public void setY(float newY){

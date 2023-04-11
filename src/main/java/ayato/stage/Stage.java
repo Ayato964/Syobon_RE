@@ -13,6 +13,8 @@ import java.awt.*;
 import java.util.ArrayList;
 
 public class Stage extends Map {
+    public boolean worldMoveMode = false;
+    public int stageX, stageY;
     public final StagePack pack;
     public final JsonNode stage;
     public Player player;
@@ -22,6 +24,8 @@ public class Stage extends Map {
         this.pack = pack;
         stage = main;
         reaming = 5;
+        stageX = 0;
+        stageY = 0;
     }
     public Stage(StagePack pack, JsonNode main, int remaining){
         this(pack, main);
@@ -41,6 +45,10 @@ public class Stage extends Map {
 
     @Override
     public void display(Graphics g) {
+        if(player.x >= Main.DESCTOP_BOUNDS.width / 2)
+            worldMoveMode = true;
+        else
+            worldMoveMode = false;
         for(Block b : blocks){
             b.display(g);
         }

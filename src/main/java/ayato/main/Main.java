@@ -65,11 +65,11 @@ public class Main extends JFrame{
         for(KeyListener ll : l)
             removeKeyListener(ll);
         Tick.getInstance().removeAllAnimation();
-        map.setup(g);
         ArrayList<Display> d =  copyList(Tick.getInstance().display);
         d.remove(displayMap);
-        d.add(map);
         displayMap = map;
+        map.setup(g);
+        d.add(map);
         Tick.getInstance().display = d;
         repaint();
     }

@@ -9,7 +9,7 @@ import java.awt.*;
 
 public abstract class Entity extends MyObjects {
     public int hp, mHp = 1;
-    protected int speed;
+    public int speed;
 
     public Entity(JsonNode info, int w, int h) {
 

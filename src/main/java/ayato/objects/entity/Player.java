@@ -2,7 +2,6 @@ package ayato.objects.entity;
 
 import ayato.main.Main;
 import ayato.map.Continue;
-import ayato.map.Title;
 import ayato.objects.addtions.*;
 import ayato.stage.Stage;
 import ayato.system.CodeToon;
@@ -12,15 +11,14 @@ import com.fasterxml.jackson.databind.JsonNode;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
-import java.util.function.IntSupplier;
 
 public class Player extends Entity {
     public boolean isMove = true;
     private BufferedImage texture_Left;
     private BufferedImage texture_Right;
+    Stage stage;
     public Player(JsonNode info) {
         super(info, 1, 2);
         speed = 10;
@@ -29,6 +27,7 @@ public class Player extends Entity {
         texture = texture_Left;
         KeyController.generate();
 
+        stage = (Stage) Main.getInstance().displayMap;
     }
 
     @Override
@@ -44,7 +43,7 @@ public class Player extends Entity {
         if(isMove){
             if(KeyController.get(KeyEvent.VK_UP) && !isDownVoid)
                 jump();
-            if(KeyController.get(KeyEvent.VK_RIGHT)) {
+            if(KeyController.get(KeyEvent.VK_RIGHT) && !stage.worldMoveMode) {
                 move(speed);
                 texture = texture_Right;
             }
@@ -80,8 +79,7 @@ public class Player extends Entity {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            Stage s = ((Stage) Main.getInstance().displayMap);
-            Main.getInstance().run(new Continue(s.reaming, s.pack, s.stage));
+            Main.getInstance().run(new Continue(stage.reaming, stage.pack, stage.stage));
 
         }));
     }
