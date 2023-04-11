@@ -4,20 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="Ver.Classic.0.1.0&#10;&#10;マップの選択画面の説明欄において、枠内に文字が収まるようなアルゴリズムを作成。&#10;バージョンをRDからClassicにアップ">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/ObjectAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Renga.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Thorn.java" afterDir="false" />
+    <list default="true" id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="Ver.Classic.0.3.0&#10;&#10;レンガブロック&#10;-&gt;下からジャンプすると、壊れる&#10;&#10;棘ブロック&#10;-&gt;どの方面でも、あたると死ぬ">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/ItemVoid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/NotVisible.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/block/blank.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/MyObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/MyObjects.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/addtions/InSide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/addtions/InSide.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Air.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Air.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Block.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/block/BlockLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/BlockLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Plane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Plane.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/stage/Stage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/stage/Stage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_1/asset/icon/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_1/asset/icon/icon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_1/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_1/data.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,8 +37,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -80,8 +74,8 @@
       <recent name="C:\Users\takaf\ClassRoom\ActionSimulater\src\main\java\ayato" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\takaf\ClassRoom\Syobon_RE\src\main\resources\assets\ayato\stage\Test_1\asset\icon" />
       <recent name="C:\Users\takaf\ClassRoom\Syobon_RE\src\main\resources\assets\ayato\block" />
+      <recent name="C:\Users\takaf\ClassRoom\Syobon_RE\src\main\resources\assets\ayato\stage\Test_1\asset\icon" />
       <recent name="C:\Users\takaf\ClassRoom\Syobon_RE\src\main\resources\assets\ayato\mob" />
       <recent name="C:\Users\takaf\ClassRoom\Syobon_RE\src\main\resources\assets\ayato\stage" />
       <recent name="C:\Users\takaf\ClassRoom\Syobon_RE\src\main\resources\assets\ayato\stage\0\asset\icon" />
@@ -265,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681242038903</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Ver.Classic.0.3.0&#10;&#10;レンガブロック&#10;-&gt;下からジャンプすると、壊れる&#10;&#10;棘ブロック&#10;-&gt;どの方面でも、あたると死ぬ">
+      <created>1681250095325</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1681250095325</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -293,7 +294,8 @@
     <MESSAGE value="Ver.experiment.04.11.1&#10;&#10;テクスチャを追加" />
     <MESSAGE value="Ver.experiment.04.11.2&#10;&#10;マップのスクロール機能を追加" />
     <MESSAGE value="Ver.Classic.0.1.0&#10;&#10;マップの選択画面の説明欄において、枠内に文字が収まるようなアルゴリズムを作成。&#10;バージョンをRDからClassicにアップ" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ver.Classic.0.1.0&#10;&#10;マップの選択画面の説明欄において、枠内に文字が収まるようなアルゴリズムを作成。&#10;バージョンをRDからClassicにアップ" />
+    <MESSAGE value="Ver.Classic.0.3.0&#10;&#10;レンガブロック&#10;-&gt;下からジャンプすると、壊れる&#10;&#10;棘ブロック&#10;-&gt;どの方面でも、あたると死ぬ" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ver.Classic.0.3.0&#10;&#10;レンガブロック&#10;-&gt;下からジャンプすると、壊れる&#10;&#10;棘ブロック&#10;-&gt;どの方面でも、あたると死ぬ" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ActionSimulater$Main.ic" NAME="Main のカバレッジ結果" MODIFIED="1681066861805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

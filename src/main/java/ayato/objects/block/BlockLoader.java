@@ -31,6 +31,8 @@ public class BlockLoader {
             case 1 -> new Plane(x, y);
             case 2-> new Renga(x, y);
             case 3->new Thorn(x, y);
+            case 4->new NotVisible(x, y);
+            case 6->new ItemVoid(x, y);
         };
     }
 

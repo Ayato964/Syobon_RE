@@ -3,6 +3,7 @@ package ayato.objects.entity;
 import ayato.main.Main;
 import ayato.map.Continue;
 import ayato.objects.addtions.*;
+import ayato.objects.block.Block;
 import ayato.stage.Stage;
 import ayato.system.CodeToon;
 import ayato.system.KeyController;
@@ -60,17 +61,33 @@ public class Player extends Entity {
         addons.add(new Jump());
         addons.add(new Gravity());
         addons.add(new InSide(() ->(int) x,()-> (int)y + h * CodeToon.BLOCK_HEIGHT ,()->w* CodeToon.BLOCK_WIDTH,()->5, i -> {
-            isDownVoid = false;
-            setY(y-1);
+            if(i instanceof Block) {
+                if(((Block) i).isCollider) {
+                    isDownVoid = false;
+                    setY(y - 1);
+                }
+            }
         }, i->isDownVoid = true));
         addons.add(new InSide(() ->(int) x + w * CodeToon.BLOCK_WIDTH + 7,()-> (int)y,()->5,()->h * CodeToon.BLOCK_HEIGHT - 10, i -> {
-            isRightVoid = false;
+            if(i instanceof Block) {
+                if(((Block) i).isCollider) {
+                    isRightVoid = false;
+                }
+            }
         }, i->isRightVoid = true));
         addons.add(new InSide(() ->(int) x - 8,()-> (int)y,()->5,()->h * CodeToon.BLOCK_HEIGHT - 10, i -> {
-            isLeftVoid = false;
+            if(i instanceof Block) {
+                if(((Block) i).isCollider) {
+                    isLeftVoid = false;
+                }
+            }
         }, i->isLeftVoid = true));
         addons.add(new InSide(() ->(int) x,()-> (int)y - 5,()->w * CodeToon.BLOCK_WIDTH,()-> 5, i -> {
-            isUPVoid = false;
+            if(i instanceof Block) {
+                if (((Block) i).isCollider) {
+                    isUPVoid = false;
+                }
+            }
         }, i->isUPVoid = true));
         addons.add(new HPController(null, null, i->{
             try {

@@ -14,8 +14,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public abstract class Block extends MyObjects {
+
     private Stage stage;
     protected boolean isVisible = true;
+    public boolean isCollider = true;
     public Block(int x, int y, int w, int h) {
         super(x, y, w, h);
 
