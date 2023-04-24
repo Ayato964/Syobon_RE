@@ -15,7 +15,7 @@ import java.util.HashMap;
 
 public abstract class Block extends MyObjects {
 
-    private Stage stage;
+    protected Stage stage;
     protected boolean isVisible = true;
     public boolean isCollider = true;
     public Block(int x, int y, int w, int h) {
@@ -39,7 +39,7 @@ public abstract class Block extends MyObjects {
 
     }
     protected void replaceBlock(int id){
-        Block b = BlockLoader.getBlock(id,(int) x,(int) y);
+        Block b = BlockLoader.getBlock(id,(int) x,(int) y, null);
         Stage s = (Stage) Main.getInstance().displayMap;
         s.endingTask(i -> {
             for(int c = 0; i < s.blocks.size(); c ++){
@@ -51,5 +51,13 @@ public abstract class Block extends MyObjects {
             }
         });
 
+    }
+    protected int getID(){
+        for(int i = 0; i < stage.blocks.size(); i ++){
+            if(stage.blocks.get(i).equals(this)){
+                return i;
+            }
+        }
+        return -1;
     }
 }

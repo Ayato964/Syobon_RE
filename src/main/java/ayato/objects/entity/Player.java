@@ -33,13 +33,13 @@ public class Player extends Entity {
     @Override
     public void display(Graphics g) {
         super.display(g);
-        /*
-        g.fillRect((int) x, (int)y + h * CodeToon.BLOCK_HEIGHT ,w* CodeToon.BLOCK_WIDTH,5);
+/*
+        g.fillRect((int)x , (int)y + h * CodeToon.BLOCK_HEIGHT ,w* CodeToon.BLOCK_WIDTH,5); //下部
         g.fillRect((int) x + w * CodeToon.BLOCK_WIDTH + 7, (int)y,5,h * CodeToon.BLOCK_HEIGHT);
         g.fillRect((int) x - 8, (int)y,5,h * CodeToon.BLOCK_HEIGHT);
-        g.fillRect((int) x, (int)y - 5,w * CodeToon.BLOCK_WIDTH, 5);
+        g.fillRect((int) x, (int)y - 1 ,w * CodeToon.BLOCK_WIDTH, 5);
+ */
 
-         */
         if(isMove){
             if(KeyController.get(KeyEvent.VK_UP) && !isDownVoid)
                 jump();
@@ -68,14 +68,14 @@ public class Player extends Entity {
                 }
             }
         }, i->isDownVoid = true));
-        addons.add(new InSide(() ->(int) x + w * CodeToon.BLOCK_WIDTH + 7,()-> (int)y,()->5,()->h * CodeToon.BLOCK_HEIGHT - 10, i -> {
+        addons.add(new InSide(() ->(int) x + w * CodeToon.BLOCK_WIDTH + 7,()-> (int)y + 5,()->5,()->h * CodeToon.BLOCK_HEIGHT - 10, i -> {
             if(i instanceof Block) {
                 if(((Block) i).isCollider) {
                     isRightVoid = false;
                 }
             }
         }, i->isRightVoid = true));
-        addons.add(new InSide(() ->(int) x - 8,()-> (int)y,()->5,()->h * CodeToon.BLOCK_HEIGHT - 10, i -> {
+        addons.add(new InSide(() ->(int) x - 8,()-> (int)y + 5,()->5,()->h * CodeToon.BLOCK_HEIGHT - 10, i -> {
             if(i instanceof Block) {
                 if(((Block) i).isCollider) {
                     isLeftVoid = false;

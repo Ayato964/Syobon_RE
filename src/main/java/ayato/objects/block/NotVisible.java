@@ -17,7 +17,9 @@ public class NotVisible extends Block{
     @Override
     protected void setAddons(ArrayList<ObjectAddon> addons) {
         addons.add(new InSide(()->(int) x + 2, ()->(int) y + CodeToon.BLOCK_HEIGHT + 5, ()-> CodeToon.BLOCK_WIDTH - 4, ()-> 5, i -> {
-            replaceBlock(6);
+            if(i.isJumped) {
+                replaceBlock(6);
+            }
         }, i -> {}));
     }
 

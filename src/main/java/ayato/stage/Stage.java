@@ -7,6 +7,7 @@ import ayato.objects.block.BlockLoader;
 import ayato.objects.entity.Player;
 import ayato.system.Background;
 import ayato.system.CodeToon;
+import ayato.system.NextTask;
 import ayato.util.Action;
 import com.fasterxml.jackson.databind.JsonNode;
 
@@ -15,7 +16,7 @@ import java.util.ArrayList;
 
 public class Stage extends Map {
     public boolean worldMoveMode = false;
-    public int stageX, stageY;
+    public int stageX, stageY, w;
     public final StagePack pack;
     public final JsonNode stage;
     public Player player;
@@ -28,6 +29,7 @@ public class Stage extends Map {
         reaming = 5;
         stageX = 0;
         stageY = 0;
+        w = stage.get("stage").get("width").asInt();
     }
     public Stage(StagePack pack, JsonNode main, int remaining){
         this(pack, main);
@@ -42,6 +44,7 @@ public class Stage extends Map {
         CodeToon.BLOCK_WIDTH = CodeToon.BLOCK_HEIGHT;
         player = new Player(stage.get("stage").get("player"));
         blocks = BlockLoader.get(stage);
+        NextTask.generate();
 
     }
 
@@ -55,10 +58,13 @@ public class Stage extends Map {
             b.display(g);
         }
         player.display(g);
+
         if(!task.isEmpty()) {
             for (Action a : task) a.action(-1);
             task = new ArrayList<>();
         }
+        NextTask.action();
+        NextTask.next();
     }
     public void endingTask(Action action){
         task.add(action);
