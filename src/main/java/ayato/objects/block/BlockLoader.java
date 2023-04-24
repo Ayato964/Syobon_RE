@@ -39,6 +39,9 @@ public class BlockLoader {
             case 6->new ItemVoid(x, y);
             case 7->new ThornBall(x, y);
             case 8->new DieFlower(x, y);
+            case 10->new Pipe_Top(x, y);
+            case 11->new Pipe_Tube(x, y);
+
         };
     }
 
