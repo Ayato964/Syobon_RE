@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="Ver.Classic.0.8.0&#10;&#10;アイテムボックス&#10;-下から叩くと何らかのアイテムをもらえる&#10;&#10;棘ボール&#10;-空中に浮いており、触ると死ぬ&#10;&#10;花(罠)&#10;-ただの花と見せかけて、摂取すると死ぬ">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Pipe_Top.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Pipe_Tube.java" afterDir="false" />
+    <list default="true" id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="Ver.Classic.0.8.0&#10;&#10;土管(頭)&#10;ごく普通の土管&#10;&#10;土管(チューブ)&#10;ごく普通の土管のチューブ">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Home.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/block/home.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/block/BlockLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/BlockLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ayato/block/docan_carb_tube.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/block/pipe_carb_tube.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ayato/block/docan_top.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/block/pipe_top.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ayato/block/docan_tube.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/block/pipe_tube.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_1/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_1/data.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,8 +71,8 @@
       <recent name="C:\Users\takaf\ClassRoom\ActionSimulater\src\main\java\ayato" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\takaf\ClassRoom\Syobon_RE\src\main\resources\assets\ayato\item" />
       <recent name="C:\Users\takaf\ClassRoom\Syobon_RE\src\main\resources\assets\ayato\block" />
+      <recent name="C:\Users\takaf\ClassRoom\Syobon_RE\src\main\resources\assets\ayato\item" />
       <recent name="C:\Users\takaf\ClassRoom\Syobon_RE\src\main\resources\assets\ayato\stage\Test_1\asset\icon" />
       <recent name="C:\Users\takaf\ClassRoom\Syobon_RE\src\main\resources\assets\ayato\mob" />
       <recent name="C:\Users\takaf\ClassRoom\Syobon_RE\src\main\resources\assets\ayato\stage" />
@@ -280,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682375840138</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Ver.Classic.0.8.0&#10;&#10;土管(頭)&#10;ごく普通の土管&#10;&#10;土管(チューブ)&#10;ごく普通の土管のチューブ">
+      <created>1682377230464</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1682377230464</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -312,7 +316,8 @@
     <MESSAGE value="Ver.Classic.0.5.0&#10;&#10;空のアイテムブロック&#10;プレーンブロックと同じ扱い&#10;&#10;孔明ブロック&#10;一見何も見えないが、そのブロックに下から衝突すると形を表す" />
     <MESSAGE value="Ver.Classic.0.5.0&#10;&#10;アイテムボックス&#10;-下から叩くと何らかのアイテムをもらえる&#10;&#10;棘ボール&#10;-空中に浮いており、触ると死ぬ&#10;&#10;花(罠)&#10;-ただの花と見せかけて、摂取すると死ぬ" />
     <MESSAGE value="Ver.Classic.0.8.0&#10;&#10;アイテムボックス&#10;-下から叩くと何らかのアイテムをもらえる&#10;&#10;棘ボール&#10;-空中に浮いており、触ると死ぬ&#10;&#10;花(罠)&#10;-ただの花と見せかけて、摂取すると死ぬ" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ver.Classic.0.8.0&#10;&#10;アイテムボックス&#10;-下から叩くと何らかのアイテムをもらえる&#10;&#10;棘ボール&#10;-空中に浮いており、触ると死ぬ&#10;&#10;花(罠)&#10;-ただの花と見せかけて、摂取すると死ぬ" />
+    <MESSAGE value="Ver.Classic.0.8.0&#10;&#10;土管(頭)&#10;ごく普通の土管&#10;&#10;土管(チューブ)&#10;ごく普通の土管のチューブ" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ver.Classic.0.8.0&#10;&#10;土管(頭)&#10;ごく普通の土管&#10;&#10;土管(チューブ)&#10;ごく普通の土管のチューブ" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ActionSimulater$Main.ic" NAME="Main のカバレッジ結果" MODIFIED="1681066861805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
