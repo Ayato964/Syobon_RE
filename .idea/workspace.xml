@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="Ver.Classic.0.8.0&#10;&#10;土管(頭)&#10;ごく普通の土管&#10;&#10;土管(チューブ)&#10;ごく普通の土管のチューブ">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Home.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/block/home.png" afterDir="false" />
+    <list default="true" id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="Ver.Classic.0.11.0&#10;&#10;家（ゴール）&#10;主人公の家を追加。&#10;触れるとゴール判定になる">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_2/asset/icon/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_2/data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/block/BlockLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/BlockLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_1/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_1/data.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,18 +52,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/takaf/ClassRoom/Syobon_RE/src/main/resources/assets/ayato/stage&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;モジュール&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.build&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/takaf/ClassRoom/Syobon_RE/src/main/resources/assets/ayato/stage/Test_2/asset/icon",
+    "project.structure.last.edited": "モジュール",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.build"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\takaf\ClassRoom\Syobon_RE\src\main\resources\assets\ayato\stage\Test_2\asset\icon" />
+      <recent name="C:\Users\takaf\ClassRoom\Syobon_RE\src\main\resources\assets\ayato\stage\Test_2" />
       <recent name="C:\Users\takaf\ClassRoom\Syobon_RE\src\main\resources\assets\ayato\stage" />
       <recent name="C:\Users\takaf\ClassRoom\ActionSimulater\src\main\java\ayato\util" />
       <recent name="C:\Users\takaf\ClassRoom\ActionSimulater\src\main\java\ayato" />
@@ -284,7 +284,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682377230464</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Ver.Classic.0.10.0&#10;&#10;土管(頭)&#10;ごく普通の土管&#10;&#10;土管(チューブ)&#10;ごく普通の土管のチューブ">
+      <created>1682378341868</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1682378341868</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Ver.Classic.0.11.0&#10;&#10;家（ゴール）&#10;主人公の家を追加。&#10;触れるとゴール判定になる">
+      <created>1682378397157</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1682378397157</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -317,7 +331,10 @@
     <MESSAGE value="Ver.Classic.0.5.0&#10;&#10;アイテムボックス&#10;-下から叩くと何らかのアイテムをもらえる&#10;&#10;棘ボール&#10;-空中に浮いており、触ると死ぬ&#10;&#10;花(罠)&#10;-ただの花と見せかけて、摂取すると死ぬ" />
     <MESSAGE value="Ver.Classic.0.8.0&#10;&#10;アイテムボックス&#10;-下から叩くと何らかのアイテムをもらえる&#10;&#10;棘ボール&#10;-空中に浮いており、触ると死ぬ&#10;&#10;花(罠)&#10;-ただの花と見せかけて、摂取すると死ぬ" />
     <MESSAGE value="Ver.Classic.0.8.0&#10;&#10;土管(頭)&#10;ごく普通の土管&#10;&#10;土管(チューブ)&#10;ごく普通の土管のチューブ" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ver.Classic.0.8.0&#10;&#10;土管(頭)&#10;ごく普通の土管&#10;&#10;土管(チューブ)&#10;ごく普通の土管のチューブ" />
+    <MESSAGE value="Ver.Classic.0.11.0" />
+    <MESSAGE value="Ver.Classic.0.10.0&#10;&#10;土管(頭)&#10;ごく普通の土管&#10;&#10;土管(チューブ)&#10;ごく普通の土管のチューブ" />
+    <MESSAGE value="Ver.Classic.0.11.0&#10;&#10;家（ゴール）&#10;主人公の家を追加。&#10;触れるとゴール判定になる" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ver.Classic.0.11.0&#10;&#10;家（ゴール）&#10;主人公の家を追加。&#10;触れるとゴール判定になる" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ActionSimulater$Main.ic" NAME="Main のカバレッジ結果" MODIFIED="1681066861805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
