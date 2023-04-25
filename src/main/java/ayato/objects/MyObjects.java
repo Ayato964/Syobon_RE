@@ -3,7 +3,10 @@ package ayato.objects;
 import ayato.main.Main;
 import ayato.objects.addtions.ObjectAddon;
 import ayato.objects.block.Block;
+import ayato.objects.entity.Entity;
+import ayato.objects.entity.Player;
 import ayato.system.CodeToon;
+import ayato.system.NextTask;
 import ayato.util.Display;
 import ayato.util.animation.ImageMaker;
 

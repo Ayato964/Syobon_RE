@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="Ver.Classic.0.12.0&#10;&#10;モブのテストマップを作成。">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Diener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/EntityLoader.java" afterDir="false" />
+    <list default="true" id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="Ver.Classic.0.13.0&#10;&#10;&#10;ダイナー&#10;-普通の敵モブ。&#10;　あたったらプレイヤーは死ぬ&#10;　上から踏みつぶすことで撃退できる。">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/system/LamdaPattern.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Home.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/block/ItemBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/ItemBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/MyObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/MyObjects.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Diener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Diener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/stage/Stage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/stage/Stage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ayato/mob/dinner.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/mob/diener.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_2/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_2/data.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -312,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682378978067</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Ver.Classic.0.13.0&#10;&#10;&#10;ダイナー&#10;-普通の敵モブ。&#10;　あたったらプレイヤーは死ぬ&#10;　上から踏みつぶすことで撃退できる。">
+      <created>1682386836243</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1682386836243</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -349,7 +351,8 @@
     <MESSAGE value="Ver.Classic.0.10.0&#10;&#10;土管(頭)&#10;ごく普通の土管&#10;&#10;土管(チューブ)&#10;ごく普通の土管のチューブ" />
     <MESSAGE value="Ver.Classic.0.11.0&#10;&#10;家（ゴール）&#10;主人公の家を追加。&#10;触れるとゴール判定になる" />
     <MESSAGE value="Ver.Classic.0.12.0&#10;&#10;モブのテストマップを作成。" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ver.Classic.0.12.0&#10;&#10;モブのテストマップを作成。" />
+    <MESSAGE value="Ver.Classic.0.13.0&#10;&#10;&#10;ダイナー&#10;-普通の敵モブ。&#10;　あたったらプレイヤーは死ぬ&#10;　上から踏みつぶすことで撃退できる。" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ver.Classic.0.13.0&#10;&#10;&#10;ダイナー&#10;-普通の敵モブ。&#10;　あたったらプレイヤーは死ぬ&#10;　上から踏みつぶすことで撃退できる。" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ActionSimulater$Main.ic" NAME="Main のカバレッジ結果" MODIFIED="1681066861805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

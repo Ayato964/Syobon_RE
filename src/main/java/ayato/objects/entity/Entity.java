@@ -39,6 +39,8 @@ public abstract class Entity extends MyObjects {
 
         hp = mHp;
 
+
+
     }
 
     @Override
@@ -68,8 +70,8 @@ public abstract class Entity extends MyObjects {
                     isDownVoid = false;
                     setY(y - 1);
                 }
-                down.action(i);
             }
+            down.action(i);
         }, i->isDownVoid = true));
         addons.add(new InSide(() ->(int) x + w * CodeToon.BLOCK_WIDTH + 7,()-> (int)y + 5,()->5,()->h * CodeToon.BLOCK_HEIGHT - 10, i -> {
             if(i instanceof Block) {

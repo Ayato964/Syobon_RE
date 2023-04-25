@@ -9,6 +9,7 @@ import ayato.objects.addtions.ObjectAddon;
 import ayato.objects.block.Block;
 import ayato.stage.Stage;
 import ayato.system.CodeToon;
+import ayato.system.LamdaPattern;
 import ayato.system.NextTask;
 import ayato.util.animation.ImageMaker;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -25,17 +26,7 @@ public class Diener extends Entity{
     protected void setAddons(ArrayList<ObjectAddon> addons) {
         addons.add(new Gravity());
         Stage s = (Stage) Main.getInstance().displayMap;
-        ObjectAction o = o1 -> {
-            if(o1 instanceof Player){
-                Entity e = (Entity) o1;
-                NextTask.add(o2->e.hp --);
-            }
-        };
-        collider(addons, o1 -> {
-            if(o1 instanceof Player){
-                hp --;
-            }
-        }, o, o, o);
+        collider(addons, LamdaPattern.takeDamageByPlayer(this), LamdaPattern.addDamageToPlayer(), LamdaPattern.addDamageToPlayer(), LamdaPattern.addDamageToPlayer());
         addons.add(new HPController(null, null, i ->s.endingTask(i1 -> s.entities.remove(this))));
     }
 
