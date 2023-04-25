@@ -7,11 +7,14 @@ import ayato.objects.addtions.Gravity;
 import ayato.objects.addtions.InSide;
 import ayato.objects.addtions.ObjectAddon;
 import ayato.objects.block.Block;
+import ayato.stage.Stage;
 import ayato.system.CodeToon;
+import ayato.system.KeyController;
 import ayato.system.NextTask;
 import com.fasterxml.jackson.databind.JsonNode;
 
 import java.awt.*;
+import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 
 public abstract class Entity extends MyObjects {
@@ -19,6 +22,7 @@ public abstract class Entity extends MyObjects {
     public int hp, mHp;
     public int speed;
     protected String direction;
+    protected Stage stage;
 
     public Entity(JsonNode info, int w, int h) {
 
@@ -39,6 +43,7 @@ public abstract class Entity extends MyObjects {
 
         hp = mHp;
 
+        stage = (Stage) Main.getInstance().displayMap;
 
 
     }
@@ -46,20 +51,21 @@ public abstract class Entity extends MyObjects {
     @Override
     public void display(Graphics g) {
         super.display(g);
-
-        g.setColor(Color.WHITE);
-        //g.fillRect((int) x,(int) y, w * CodeToon.BLOCK_WIDTH, h * CodeToon.BLOCK_HEIGHT);
-        g.drawImage(texture, (int) x, (int) y, w * CodeToon.BLOCK_WIDTH, h * CodeToon.BLOCK_HEIGHT, null);
         if(y >= Main.DESCTOP_BOUNDS.height){
             hp --;
         }
         if(isNPC){
+            g.setColor(Color.WHITE);
+            g.drawImage(texture, (int) x +stage.stageX, (int) y + stage.stageY , w * CodeToon.BLOCK_WIDTH, h * CodeToon.BLOCK_HEIGHT, null);
             switch (direction){
-                case "left":move(-1 * speed);break;
+                case "left":if(stage.worldMoveMode && KeyController.get(KeyEvent.VK_RIGHT)) move(-1 * stage.player.speed);else move(-1 * speed);break;
                 case "right":move(speed);break;
                 case "up":jump();break;
                 case "down":break;
             }
+        }else {
+            g.setColor(Color.WHITE);
+            g.drawImage(texture, (int) x, (int) y, w * CodeToon.BLOCK_WIDTH, h * CodeToon.BLOCK_HEIGHT, null);
         }
     }
     protected void collider(ArrayList<ObjectAddon> addons, ObjectAction up,ObjectAction down,ObjectAction left,ObjectAction right){

@@ -19,7 +19,6 @@ public class Player extends Entity {
     public boolean isMove = true;
     private BufferedImage texture_Left;
     private BufferedImage texture_Right;
-    Stage stage;
     public Player(JsonNode info) {
         super(info, 1, 2);
         isNPC = false;
@@ -27,8 +26,6 @@ public class Player extends Entity {
         texture_Left = (BufferedImage) new ImageMaker("mob/player_left", 64, 128).get();
         texture_Right = (BufferedImage) new ImageMaker("mob/player_right", 64, 128).get();
         KeyController.generate();
-
-        stage = (Stage) Main.getInstance().displayMap;
     }
 
     @Override
