@@ -1,6 +1,7 @@
 package ayato.objects.block;
 
 import ayato.main.Main;
+import ayato.map.Clear;
 import ayato.map.Title;
 import ayato.objects.ObjectAction;
 import ayato.objects.addtions.InSide;
@@ -26,7 +27,7 @@ public class Home extends Block{
               } catch (InterruptedException e) {
                   throw new RuntimeException(e);
               }
-              Main.getInstance().run(new Title());
+              Main.getInstance().run(new Clear(stage.reaming, stage.pack, stage.stage));
           }
         };
         addons.add(new InSide(() ->(int) x,()-> (int)y + h * CodeToon.BLOCK_HEIGHT ,()->w* CodeToon.BLOCK_WIDTH,()->2, t, i->{}));

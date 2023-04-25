@@ -1,4 +1,3 @@
-test.hehe = "こんにちは",
 main.title = "ちょっとそこ通りますよ？",
 main.chooser.1 = "ストーリーモード",
 main.chooser.2 = "カスタムマップ",
@@ -10,3 +9,5 @@ stagechoose.enter = "決定",
 
 continue.mes = "あぁ、無常",
 continue.reaming = "x$",
+
+clear.text1 = "ゲームクリア！！！",
