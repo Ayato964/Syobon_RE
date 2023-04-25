@@ -3,11 +3,15 @@
     "name": "モブのテストマップ",
     "overview": "モブキャラが正しく描画、または実装できているかをテストする"
   },
-  "mobs": {},
-  "events": {
-    "i-919": {
-      "category": "block",
-      "id": 8
+  "entities": {
+    "0": {
+      "id": 0,
+      "x": 8,
+      "y": 8,
+      "speed": 3,
+      "hp": 1,
+      "direction": "left",
+      "name": "TestMob"
     }
   },
   "stage": {

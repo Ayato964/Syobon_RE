@@ -16,8 +16,13 @@ public class ItemBox extends Block{
 
     public ItemBox(int x, int y, JsonNode node) {
         super(x, y, 1, 1);
-        category = node.get("category").asText();
-        id = node.get("id").asInt();
+        if(node != null) {
+            category = node.get("category").asText();
+            id = node.get("id").asInt();
+        }else{
+            category = "blank";
+            id= -1;
+        }
     }
 
     @Override
@@ -36,6 +41,7 @@ public class ItemBox extends Block{
                             stage.blocks.add(myID - stage.w, b);
                         });
                         break;
+                    case "blank": break;
                 }
             }
         }, i -> {}));

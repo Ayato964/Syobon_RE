@@ -22,6 +22,7 @@ public class Player extends Entity {
     Stage stage;
     public Player(JsonNode info) {
         super(info, 1, 2);
+        isNPC = false;
         speed = 10;
         texture_Left = (BufferedImage) new ImageMaker("mob/player_left", 64, 128).get();
         texture_Right = (BufferedImage) new ImageMaker("mob/player_right", 64, 128).get();

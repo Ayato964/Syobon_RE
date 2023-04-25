@@ -4,6 +4,8 @@ import ayato.main.Main;
 import ayato.map.Map;
 import ayato.objects.block.Block;
 import ayato.objects.block.BlockLoader;
+import ayato.objects.entity.Entity;
+import ayato.objects.entity.EntityLoader;
 import ayato.objects.entity.Player;
 import ayato.system.Background;
 import ayato.system.CodeToon;
@@ -21,6 +23,7 @@ public class Stage extends Map {
     public final JsonNode stage;
     public Player player;
     public ArrayList<Block> blocks;
+    public ArrayList<Entity> entities;
     private ArrayList<Action> task = new ArrayList<>();
     public int reaming;
     public Stage(StagePack pack, JsonNode main){
@@ -44,19 +47,16 @@ public class Stage extends Map {
         CodeToon.BLOCK_WIDTH = CodeToon.BLOCK_HEIGHT;
         player = new Player(stage.get("stage").get("player"));
         blocks = BlockLoader.get(stage);
+        entities = EntityLoader.get(stage);
         NextTask.generate();
 
     }
 
     @Override
     public void display(Graphics g) {
-        if(player.x >= Main.DESCTOP_BOUNDS.width / 2)
-            worldMoveMode = true;
-        else
-            worldMoveMode = false;
-        for(Block b : blocks){
-            b.display(g);
-        }
+        worldMoveMode = player.x >= Main.DESCTOP_BOUNDS.width / 2;
+        for(Block b : blocks) b.display(g);
+        for(Entity e : entities) e.display(g);
         player.display(g);
 
         if(!task.isEmpty()) {

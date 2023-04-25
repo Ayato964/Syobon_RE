@@ -14,6 +14,7 @@ import java.util.ArrayList;
 public class Home extends Block{
     public Home(int x, int y) {
         super(x, y, 5, 5);
+        isCollider = false;
     }
 
     @Override
