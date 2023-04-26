@@ -35,7 +35,7 @@ public abstract class Block extends MyObjects {
         if(x < -CodeToon.BLOCK_WIDTH)
             isVisible = false;
         if(isVisible)
-            g.drawImage(texture, (int) x + stage.stageX,(int) y + stage.stageY, w * CodeToon.BLOCK_WIDTH, h * CodeToon.BLOCK_HEIGHT, null);
+            g.drawImage(texture, (int) x,(int) y, w * CodeToon.BLOCK_WIDTH, h * CodeToon.BLOCK_HEIGHT, null);
 
     }
     protected void replaceBlock(int id){

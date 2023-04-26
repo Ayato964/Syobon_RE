@@ -9,11 +9,13 @@ import ayato.objects.entity.EntityLoader;
 import ayato.objects.entity.Player;
 import ayato.system.Background;
 import ayato.system.CodeToon;
+import ayato.system.KeyController;
 import ayato.system.NextTask;
 import ayato.util.Action;
 import com.fasterxml.jackson.databind.JsonNode;
 
 import java.awt.*;
+import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 
 public class Stage extends Map {

@@ -15,7 +15,7 @@ public class BlockLoader {
         int y = 0;
         int c = 0;
         for(int i = 0; i < stage.size(); i ++){
-            blocks.add(getBlock(i, stage.get(i).asInt(), x * CodeToon.BLOCK_WIDTH, y * CodeToon.BLOCK_HEIGHT,node.get("events")));
+            blocks.add(getBlock(i, stage.get(i).asInt(), x * CodeToon.BLOCK_WIDTH, y * CodeToon.BLOCK_HEIGHT,node));
             x += 1;
             if(x >= w){
                 x = 0;
@@ -35,12 +35,13 @@ public class BlockLoader {
             case 2-> new Renga(x, y);
             case 3->new Thorn(x, y);
             case 4->new NotVisible(x, y);
-            case 5->new ItemBox(x, y, node.get("i-" + number));
+            case 5->new ItemBox(x, y, node.get("events").get("i-" + number));
             case 6->new ItemVoid(x, y);
             case 7->new ThornBall(x, y);
             case 8->new DieFlower(x, y);
             case 10->new Pipe_Top(x, y);
             case 11->new Pipe_Tube(x, y);
+            case 20->new Event(x, y, node.get("events").get(String.valueOf(number)), node, number);
             case 99->new Home(x, y);
 
         };

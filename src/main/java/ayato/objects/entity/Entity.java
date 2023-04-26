@@ -55,14 +55,14 @@ public abstract class Entity extends MyObjects {
         }
         if(isNPC){
             g.setColor(Color.WHITE);
-            g.drawImage(texture, (int) x +stage.stageX, (int) y + stage.stageY , w * CodeToon.BLOCK_WIDTH, h * CodeToon.BLOCK_HEIGHT, null);
+            g.drawImage(texture, (int) x, (int) y , w * CodeToon.BLOCK_WIDTH, h * CodeToon.BLOCK_HEIGHT, null);
             switch (direction){
-                case "left":if(stage.worldMoveMode && KeyController.get(KeyEvent.VK_RIGHT)) move(-1 * stage.player.speed);else move(-1 * speed);break;
+                case "left":if(stage.worldMoveMode && KeyController.get(KeyEvent.VK_RIGHT)) move(-1 * (stage.player.speed + speed));else move(-1 * speed);break;
                 case "right":move(speed);break;
                 case "up":jump();break;
                 case "down":break;
             }
-            if(x + CodeToon.BLOCK_WIDTH + stage.stageX < 0){
+            if(x + CodeToon.BLOCK_WIDTH< 0){
                 stage.endingTask(i->stage.entities.remove(this));
             }
         }else {

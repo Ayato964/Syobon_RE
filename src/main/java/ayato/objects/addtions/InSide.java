@@ -36,14 +36,16 @@ public class InSide implements ObjectAddon{
                 action.action(b);
                 return;
             }else {
-                notAction.action(b);
+                if(notAction != null)
+                    notAction.action(b);
             }
         }
         Rectangle player =  new Rectangle((int) stage.player.x, (int) stage.player.y, stage.player.w * CodeToon.BLOCK_WIDTH, stage.player.h * CodeToon.BLOCK_HEIGHT);
         if(player.intersects(mySelf)) {
             action.action(stage.player);
         }else {
-            notAction.action(stage.player);
+            if(notAction != null)
+                notAction.action(stage.player);
         }
 
     }

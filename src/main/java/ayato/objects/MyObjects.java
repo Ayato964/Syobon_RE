@@ -45,9 +45,8 @@ public abstract class MyObjects implements Display {
             float tempX = x + moveX;
             if((x > tempX && isLeftVoid) || (x < tempX && isRightVoid))
                 if (tempX > - CodeToon.BLOCK_WIDTH * 2) {
-                    if (tempX + w * CodeToon.BLOCK_WIDTH < Main.DESCTOP_BOUNDS.width || this instanceof Block) {
+                    //if (tempX + w * CodeToon.BLOCK_WIDTH < Main.DESCTOP_BOUNDS.width || this instanceof Block) {
                         setX(tempX);
-                    }
                 }
     }
 
