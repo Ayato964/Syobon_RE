@@ -23,6 +23,12 @@ public class Event extends Block{
                 Entity e = EntityLoader.summon(data.get("entities").get("e-" + summon.asInt()));
                 if(e != null)
                     entities.add(e);
+            }else{
+                for(int i = 0; i < summon.size(); i ++){
+                    Entity e = EntityLoader.summon(data.get("entities").get("e-" + summon.get(i).asInt()));
+                    if(e != null)
+                        entities.add(e);
+                }
             }
 
     }

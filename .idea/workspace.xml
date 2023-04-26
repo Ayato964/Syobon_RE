@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="Ver.Classic.0.15.0&#10;&#10;ICBM&#10;-ミサイル">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Event.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_3/asset/icon/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_3/data.json" afterDir="false" />
+    <list default="true" id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="Ver.Classic.0.16.0&#10;&#10;イベントブロックを追加&#10;-そのブロックに接すると何かをアクションする。&#10;&#10;* モブを召喚する機能を追加">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/MyObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/MyObjects.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/addtions/InSide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/addtions/InSide.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Block.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Block.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/block/BlockLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/BlockLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/stage/Stage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/stage/Stage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_3/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_3/data.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -347,7 +341,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682470388148</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Ver.Classic.0.16.0&#10;&#10;イベントブロックを追加&#10;-そのブロックに接すると何かをアクションする。&#10;&#10;* モブを召喚する機能を追加">
+      <created>1682479136761</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1682479136761</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -362,7 +363,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ver.BEGIN.04.08.1&#10;&#10;jsonをロードする機構を作成。&#10;&#10;背景と、プレイヤーの情報を引き出せるようになった。" />
     <MESSAGE value="Ver.experiment.04.08.1&#10;&#10;自由落下における物理演算の仕組みを開発" />
     <MESSAGE value="Ver.experiment.04.08.2&#10;&#10;ブロックの概念を追加&#10;10 * 15のマップの生成に成功した。" />
     <MESSAGE value="Ver.experiment.04.10.1&#10;&#10;当たり判定の概念を追加した。&#10;ジャンプの判定を追加した。" />
@@ -387,7 +387,8 @@
     <MESSAGE value="Ver.Classic.0.13.2&#10;&#10;&#10;ダイナー&#10;-普通の敵モブ。&#10;　あたったらプレイヤーは死ぬ&#10;　上から踏みつぶすことで撃退できる。" />
     <MESSAGE value="Ver.Classic.0.14.0&#10;&#10;ゲームクリア画面を追加" />
     <MESSAGE value="Ver.Classic.0.15.0&#10;&#10;ICBM&#10;-ミサイル" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ver.Classic.0.15.0&#10;&#10;ICBM&#10;-ミサイル" />
+    <MESSAGE value="Ver.Classic.0.16.0&#10;&#10;イベントブロックを追加&#10;-そのブロックに接すると何かをアクションする。&#10;&#10;* モブを召喚する機能を追加" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ver.Classic.0.16.0&#10;&#10;イベントブロックを追加&#10;-そのブロックに接すると何かをアクションする。&#10;&#10;* モブを召喚する機能を追加" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ActionSimulater$Main.ic" NAME="Main のカバレッジ結果" MODIFIED="1681066861805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

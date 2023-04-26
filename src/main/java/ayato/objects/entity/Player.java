@@ -44,12 +44,13 @@ public class Player extends Entity {
             if(KeyController.get(KeyEvent.VK_RIGHT) && !stage.worldMoveMode) {
                 move(speed);
                 texture = texture_Right;
-            }else {
-                stage.stageX += speed;
             }
             if(KeyController.get(KeyEvent.VK_LEFT)) {
                 move(-1 * speed);
                 texture = texture_Left;
+            }
+            if(KeyController.get(KeyEvent.VK_RIGHT) && stage.worldMoveMode){
+                stage.stageX += speed;
             }
         }
     }
