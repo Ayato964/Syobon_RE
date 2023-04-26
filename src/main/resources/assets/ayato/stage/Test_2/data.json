@@ -12,6 +12,14 @@
       "hp": 1,
       "direction": "left",
       "name": "TestMob"
+    },
+    "1": {
+      "id": 1,
+      "x": 20,
+      "y": 8,
+      "speed": 50,
+      "direction": "left",
+      "name": "tintin"
     }
   },
   "stage": {

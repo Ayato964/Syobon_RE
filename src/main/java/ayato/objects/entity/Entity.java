@@ -25,7 +25,6 @@ public abstract class Entity extends MyObjects {
     protected Stage stage;
 
     public Entity(JsonNode info, int w, int h) {
-
         super(info.get("x").asInt() * CodeToon.BLOCK_WIDTH, info.get("y").asInt() * CodeToon.BLOCK_HEIGHT, w, h);
         if(info.get("speed") != null)
             speed = info.get("speed").asInt();
@@ -63,6 +62,9 @@ public abstract class Entity extends MyObjects {
                 case "up":jump();break;
                 case "down":break;
             }
+            if(x + CodeToon.BLOCK_WIDTH + stage.stageX < 0){
+                stage.endingTask(i->stage.entities.remove(this));
+            }
         }else {
             g.setColor(Color.WHITE);
             g.drawImage(texture, (int) x, (int) y, w * CodeToon.BLOCK_WIDTH, h * CodeToon.BLOCK_HEIGHT, null);
@@ -79,7 +81,7 @@ public abstract class Entity extends MyObjects {
             }
             down.action(i);
         }, i->isDownVoid = true));
-        addons.add(new InSide(() ->(int) x + w * CodeToon.BLOCK_WIDTH + 7,()-> (int)y + 5,()->5,()->h * CodeToon.BLOCK_HEIGHT - 10, i -> {
+        addons.add(new InSide(() ->(int) x + w * CodeToon.BLOCK_WIDTH + 7,()-> (int)y + 8,()->5,()->h * CodeToon.BLOCK_HEIGHT - 13, i -> {
             if(i instanceof Block) {
                 if(((Block) i).isCollider) {
                     isRightVoid = false;
@@ -88,7 +90,7 @@ public abstract class Entity extends MyObjects {
             right.action(i);
 
         }, i->isRightVoid = true));
-        addons.add(new InSide(() ->(int) x - 8,()-> (int)y + 5,()->5,()->h * CodeToon.BLOCK_HEIGHT - 10, i -> {
+        addons.add(new InSide(() ->(int) x - 8,()-> (int)y + 8,()->5,()->h * CodeToon.BLOCK_HEIGHT - 13, i -> {
             if(i instanceof Block) {
                 if(((Block) i).isCollider) {
                     isLeftVoid = false;

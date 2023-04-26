@@ -27,7 +27,7 @@ public class Diener extends Entity{
         addons.add(new Gravity());
         Stage s = (Stage) Main.getInstance().displayMap;
         collider(addons, LamdaPattern.takeDamageByPlayer(this), LamdaPattern.addDamageToPlayer(), LamdaPattern.addDamageToPlayer(), LamdaPattern.addDamageToPlayer());
-        addons.add(new HPController(null, null, i ->s.endingTask(i1 -> s.entities.remove(this))));
+        addons.add(new HPController(null, null, LamdaPattern.removeToEntityOf(this, s)));
     }
 
     @Override

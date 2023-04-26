@@ -55,9 +55,9 @@ public class Stage extends Map {
     @Override
     public void display(Graphics g) {
         worldMoveMode = player.x >= Main.DESCTOP_BOUNDS.width / 2;
+        player.display(g);
         for(Block b : blocks) b.display(g);
         for(Entity e : entities) e.display(g);
-        player.display(g);
 
         if(!task.isEmpty()) {
             for (Action a : task) a.action(-1);

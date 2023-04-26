@@ -22,6 +22,7 @@ public class EntityLoader {
     public static Entity summon(JsonNode entity){
         return switch (entity.get("id") != null ? entity.get("id").asInt() : -1){
             case 0->new Diener(entity);
+            case 1->new ICBM(entity);
             default -> null;
         };
     }
