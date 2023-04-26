@@ -50,6 +50,10 @@ public class Event extends Block{
         if(trigger != null){
             if(!trigger.isArray()){
                 subjectIDs.add(trigger.asInt());
+            }else{
+                for(int i = 0; i < trigger.size(); i ++){
+                    subjectIDs.add(trigger.get(i).asInt());
+                }
             }
         }
     }

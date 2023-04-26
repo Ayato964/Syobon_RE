@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="Ver.Classic.0.16.0&#10;&#10;イベントブロック&#10;* モブを複数召喚できる機能を追加。">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="Ver.Classic.0.18.0&#10;&#10;イベントブロック&#10;*イベントを発生させるための条件を決める機能を追加&#10;*イベントのトリガーをオンにする機能を追加。">
       <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Event.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_3/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_3/data.json" afterDir="false" />
     </list>
@@ -354,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682480377245</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Ver.Classic.0.18.0&#10;&#10;イベントブロック&#10;*イベントを発生させるための条件を決める機能を追加&#10;*イベントのトリガーをオンにする機能を追加。">
+      <created>1682512882957</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1682512882957</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -369,7 +375,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ver.experiment.04.08.2&#10;&#10;ブロックの概念を追加&#10;10 * 15のマップの生成に成功した。" />
     <MESSAGE value="Ver.experiment.04.10.1&#10;&#10;当たり判定の概念を追加した。&#10;ジャンプの判定を追加した。" />
     <MESSAGE value="Ver.experiment.04.10.2&#10;&#10;当たり判定の物理演算のバグを修正" />
     <MESSAGE value="Ver.experiment.04.10.3&#10;&#10;プレイヤーのキー操作の改善" />
@@ -394,7 +399,8 @@
     <MESSAGE value="Ver.Classic.0.15.0&#10;&#10;ICBM&#10;-ミサイル" />
     <MESSAGE value="Ver.Classic.0.16.0&#10;&#10;イベントブロックを追加&#10;-そのブロックに接すると何かをアクションする。&#10;&#10;* モブを召喚する機能を追加" />
     <MESSAGE value="Ver.Classic.0.16.0&#10;&#10;イベントブロック&#10;* モブを複数召喚できる機能を追加。" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ver.Classic.0.16.0&#10;&#10;イベントブロック&#10;* モブを複数召喚できる機能を追加。" />
+    <MESSAGE value="Ver.Classic.0.18.0&#10;&#10;イベントブロック&#10;*イベントを発生させるための条件を決める機能を追加&#10;*イベントのトリガーをオンにする機能を追加。" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ver.Classic.0.18.0&#10;&#10;イベントブロック&#10;*イベントを発生させるための条件を決める機能を追加&#10;*イベントのトリガーをオンにする機能を追加。" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ActionSimulater$Main.ic" NAME="Main のカバレッジ結果" MODIFIED="1681066861805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
