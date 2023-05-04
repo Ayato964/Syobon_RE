@@ -59,7 +59,11 @@
       "condition": {
         "type": 0
       },
-      "summon": 5
+      "replace": {
+        "x":65,
+        "y": 8,
+        "id":2
+      }
     },
     "1059": {
       "summon": 0

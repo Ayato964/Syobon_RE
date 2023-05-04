@@ -17,19 +17,29 @@ public class Event extends Block{
     private final ArrayList<Entity> entities;
     private final ArrayList<Integer> subjectIDs;
     private final ArrayList<BooleanSupplier> conditions;
+    private final ArrayList<Integer[]> replaceBlock;
     public Event(int x, int y, JsonNode eventJson, JsonNode data, int blockID) {
         super(x, y, 1, 1);
         isCollider = false;
         entities = new ArrayList<>();
         subjectIDs = new ArrayList<>();
         conditions = new ArrayList<>();
+        replaceBlock = new ArrayList<>();
+        setReplaceBlock(eventJson, data);
         triggerSetting(eventJson, data);
         summonSetting(eventJson, data);
         conditionSetting(eventJson, data);
 
 
     }
-
+    private void setReplaceBlock(JsonNode eventJSon, JsonNode data){
+        JsonNode replace = eventJSon.get("replace");
+        if(replace != null){
+            if(!replace.isArray()){
+                replaceBlock.add(new Integer[]{replace.get("x").asInt(), replace.get("y").asInt(), replace.get("id").asInt()});
+            }
+        }
+    }
     private void conditionSetting(JsonNode eventJson, JsonNode data) {
         JsonNode condition = eventJson.get("condition");
         if(condition != null){
@@ -86,6 +96,12 @@ public class Event extends Block{
                             for (Entity e : entities) {
                                 e.setX(e.x - stage.stageX);
                                 stage.entities.add(e);
+                            }
+                        });
+                    if (!replaceBlock.isEmpty())
+                        stage.endingTask(i ->{
+                            for (Integer[] values : replaceBlock){
+                                stage.replaceBlock(values[0], values[1], values[2]);
                             }
                         });
                     if(!subjectIDs.isEmpty()){

@@ -16,7 +16,8 @@ public class Renga extends Block{
     @Override
     protected void setAddons(ArrayList<ObjectAddon> addons) {
         addons.add(new InSide(()->(int) x + 2, ()->(int) y + CodeToon.BLOCK_HEIGHT + 5, ()-> CodeToon.BLOCK_WIDTH - 4, ()-> 5, i -> {
-            replaceBlock(0);
+            if(!(i instanceof  Block))
+                replaceBlock(0);
         }, i -> {}));
     }
 

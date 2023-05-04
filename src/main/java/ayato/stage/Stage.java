@@ -78,4 +78,16 @@ public class Stage extends Map {
             default -> Background.BackgroundMode.GRAY;
         };
     }
+
+    public void replaceBlock(Integer x, Integer y, Integer id) {
+        int blockNumber = stage.get("stage").get("width").asInt() * y + x;
+        Block target = blocks.get(blockNumber);
+        Block b = BlockLoader.getBlock(blockNumber, //BlockNumber
+                id,(int) target.x, (int) target.y, stage);
+        if(b !=null) {
+            blocks.remove(blockNumber);
+            blocks.add(blockNumber, b);
+            System.out.println(blocks.get(blockNumber).getClass() + "   " + blocks.get(blockNumber).x);
+        }
+    }
 }

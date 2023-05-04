@@ -10,6 +10,7 @@ public class Air extends Block{
 
     public Air(int x, int y) {
         super(x, y, 1, 1);
+        isVisible = false;
     }
 
     @Override
@@ -20,9 +21,11 @@ public class Air extends Block{
     protected ImageMaker setTexture() {
         return null;
     }
-
+/*
     @Override
     public void display(Graphics g) {
 
     }
+
+ */
 }
