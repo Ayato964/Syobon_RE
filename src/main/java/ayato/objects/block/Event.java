@@ -37,6 +37,10 @@ public class Event extends Block{
         if(replace != null){
             if(!replace.isArray()){
                 replaceBlock.add(new Integer[]{replace.get("x").asInt(), replace.get("y").asInt(), replace.get("id").asInt()});
+            }else{
+                for(int i = 0; i < replace.size(); i ++){
+                    replaceBlock.add(new Integer[]{replace.get(i).get("x").asInt(), replace.get(i).get("y").asInt(), replace.get(i).get("id").asInt()});
+                }
             }
         }
     }
@@ -57,12 +61,15 @@ public class Event extends Block{
 
     private void triggerSetting(JsonNode eventJson, JsonNode data) {
         JsonNode trigger = eventJson.get("trigger");
+        int width = data.get("stage").get("width").asInt();
         if(trigger != null){
             if(!trigger.isArray()){
-                subjectIDs.add(trigger.asInt());
+                String[] strID = trigger.asText().split("x");
+                subjectIDs.add(Integer.parseInt(strID[0]) + width * Integer.parseInt(strID[1]));
             }else{
                 for(int i = 0; i < trigger.size(); i ++){
-                    subjectIDs.add(trigger.get(i).asInt());
+                    String[] strID = trigger.get(i).asText().split("x");
+                    subjectIDs.add(Integer.parseInt(strID[0]) + width * Integer.parseInt(strID[1]));
                 }
             }
         }

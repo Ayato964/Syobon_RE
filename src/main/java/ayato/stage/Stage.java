@@ -87,7 +87,6 @@ public class Stage extends Map {
         if(b !=null) {
             blocks.remove(blockNumber);
             blocks.add(blockNumber, b);
-            System.out.println(blocks.get(blockNumber).getClass() + "   " + blocks.get(blockNumber).x);
         }
     }
 }
