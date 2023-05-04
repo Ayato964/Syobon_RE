@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="Ver.Classic.0.20.0&#10;&#10;イベントブロック&#10;*ブロックの置き換えができるようになった。">
+    <list default="true" id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="Ver.Classic.0.21.0&#10;&#10;イベントブロック&#10;*複数のブロックの置き換えが可能になった&#10;*イベントの座標を指定する際、blockIDではなくXY座標で決めるシステムになった。">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/block/BlockLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/BlockLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Event.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_3/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_3/data.json" afterDir="false" />
     </list>
@@ -376,7 +375,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683186745640</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Ver.Classic.0.20.0&#10;&#10;イベントブロック&#10;*複数のブロックの置き換えが可能になった&#10;*イベントの座標を指定する際、blockIDではなくXY座標で決めるシステムになった。">
+      <created>1683220603744</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1683220603744</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Ver.Classic.0.21.0&#10;&#10;イベントブロック&#10;*複数のブロックの置き換えが可能になった&#10;*イベントの座標を指定する際、blockIDではなくXY座標で決めるシステムになった。">
+      <created>1683220749092</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1683220749092</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -391,8 +404,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ver.experiment.04.10.3&#10;&#10;プレイヤーのキー操作の改善" />
-    <MESSAGE value="Ver.experiment.04.10.4&#10;&#10;テクスチャを追加" />
     <MESSAGE value="Ver.experiment.04.10.5&#10;&#10;ジャンプ機能をリニューアル&#10;マップの範囲外に出たとき、ゲームオーバーになる機能を追加&#10;ライフを追加" />
     <MESSAGE value="Ver.experiment.04.11.1&#10;&#10;テクスチャを追加" />
     <MESSAGE value="Ver.experiment.04.11.2&#10;&#10;マップのスクロール機能を追加" />
@@ -416,7 +427,9 @@
     <MESSAGE value="Ver.Classic.0.18.0&#10;&#10;イベントブロック&#10;*イベントを発生させるための条件を決める機能を追加&#10;*イベントのトリガーをオンにする機能を追加。" />
     <MESSAGE value="Ver.Classic.0.19.0&#10;&#10;イベントブロック&#10;*複数のイベントトリガーを設定できるようになった" />
     <MESSAGE value="Ver.Classic.0.20.0&#10;&#10;イベントブロック&#10;*ブロックの置き換えができるようになった。" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ver.Classic.0.20.0&#10;&#10;イベントブロック&#10;*ブロックの置き換えができるようになった。" />
+    <MESSAGE value="Ver.Classic.0.20.0&#10;&#10;イベントブロック&#10;*複数のブロックの置き換えが可能になった&#10;*イベントの座標を指定する際、blockIDではなくXY座標で決めるシステムになった。" />
+    <MESSAGE value="Ver.Classic.0.21.0&#10;&#10;イベントブロック&#10;*複数のブロックの置き換えが可能になった&#10;*イベントの座標を指定する際、blockIDではなくXY座標で決めるシステムになった。" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ver.Classic.0.21.0&#10;&#10;イベントブロック&#10;*複数のブロックの置き換えが可能になった&#10;*イベントの座標を指定する際、blockIDではなくXY座標で決めるシステムになった。" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ActionSimulater$Main.ic" NAME="Main のカバレッジ結果" MODIFIED="1681066861805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

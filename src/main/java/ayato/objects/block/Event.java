@@ -14,10 +14,11 @@ import java.util.function.BooleanSupplier;
 public class Event extends Block{
     protected boolean isValid = true;
     protected boolean trigger = false;
-    private final ArrayList<Entity> entities;
-    private final ArrayList<Integer> subjectIDs;
-    private final ArrayList<BooleanSupplier> conditions;
-    private final ArrayList<Integer[]> replaceBlock;
+    private final ArrayList<Entity> entities;   //召喚したいエンティティを格納する。
+    private final ArrayList<Integer> subjectIDs;//トリガーをオンにしたいイベントブロックのIDを格納する。
+    private final ArrayList<BooleanSupplier> conditions;//イベントを実行するための条件を格納する。
+    private final ArrayList<Integer[]> replaceBlock;//ブロック情報を更新したいXY座標と、置き換えたいブロックIDを格納する。
+    private final ArrayList<Integer> unTriggerEventID;//トリガーをオフにするイベントのIDを格納する。
     public Event(int x, int y, JsonNode eventJson, JsonNode data, int blockID) {
         super(x, y, 1, 1);
         isCollider = false;
@@ -25,13 +26,32 @@ public class Event extends Block{
         subjectIDs = new ArrayList<>();
         conditions = new ArrayList<>();
         replaceBlock = new ArrayList<>();
+        unTriggerEventID = new ArrayList<>();
         setReplaceBlock(eventJson, data);
         triggerSetting(eventJson, data);
         summonSetting(eventJson, data);
         conditionSetting(eventJson, data);
+        unTriggerEventSetting(eventJson, data);
 
 
     }
+
+    private void unTriggerEventSetting(JsonNode eventJson, JsonNode data) {
+        JsonNode untrigger = eventJson.get("untrigger");
+        int width = data.get("stage").get("width").asInt();
+        if(untrigger != null){
+            if(!untrigger.isArray()) {
+                String[] strID = untrigger.asText().split("x");
+                unTriggerEventID.add(Integer.parseInt(strID[0]) + width * Integer.parseInt(strID[1]));
+            }else {
+                for(int i = 0; i < untrigger.size(); i ++){
+                    String[] strID = untrigger.get(i).asText().split("x");
+                    unTriggerEventID.add(Integer.parseInt(strID[0]) + width * Integer.parseInt(strID[1]));
+                }
+            }
+        }
+    }
+
     private void setReplaceBlock(JsonNode eventJSon, JsonNode data){
         JsonNode replace = eventJSon.get("replace");
         if(replace != null){
@@ -55,6 +75,7 @@ public class Event extends Block{
     private BooleanSupplier condition(int id){
         return switch (id){
             case 0->TriggerCondition.getType0(this);
+            case 1->TriggerCondition.getType1(this);
             default -> null;
         };
     }
@@ -120,6 +141,15 @@ public class Event extends Block{
                             }
                         });
                     }
+                    if(!unTriggerEventID.isEmpty()){
+                        stage.endingTask(i -> {
+                            for(int id : unTriggerEventID){
+                                Block b = stage.blocks.get(id);
+                                if(b instanceof Event)
+                                    ((Event) b).trigger = false;
+                            }
+                        });
+                    }
 
                 }
             }
@@ -142,6 +172,10 @@ public class Event extends Block{
 
     protected static class TriggerCondition{
         public static BooleanSupplier getType0(Event e){
+            return ()-> e.trigger;
+        }
+        public static BooleanSupplier getType1(Event e){
+            e.trigger = true;
             return ()-> e.trigger;
         }
     }
