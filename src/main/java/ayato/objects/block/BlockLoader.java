@@ -29,6 +29,9 @@ public class BlockLoader {
         return getBlock(-1, id, x, y, node);
     }
     public static Block getBlock(int number, int id, int x, int y, JsonNode node){
+        int width = node.get("stage").get("width").asInt();
+        int bx = number % width;
+        int by = number / width;
         return switch (id){
             default -> new Air(x, y);
             case 1 -> new Plane(x, y);
@@ -41,7 +44,7 @@ public class BlockLoader {
             case 8->new DieFlower(x, y);
             case 10->new Pipe_Top(x, y);
             case 11->new Pipe_Tube(x, y);
-            case 20->new Event(x, y, node.get("events").get(String.valueOf(number)), node, number);
+            case 20->new Event(x, y, node.get("events").get(bx + "x" + by), node, number);
             case 99->new Home(x, y);
 
         };
