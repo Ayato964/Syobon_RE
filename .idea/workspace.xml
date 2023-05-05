@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="Ver.Classic.0.21.0&#10;&#10;イベントブロック&#10;*複数のブロックの置き換えが可能になった&#10;*イベントの座標を指定する際、blockIDではなくXY座標で決めるシステムになった。">
+    <list default="true" id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="Ver.Classic.0.22.0&#10;&#10;イベントブロック&#10;*イベントのトリガーを最初からtrueに、またfalseにする機構を作成した。">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_4/asset/icon/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_4/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_4/under.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_3/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_3/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/map/Continue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/map/Continue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/block/BlockLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/BlockLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Pipe_Top.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Pipe_Top.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/stage/Stage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/stage/Stage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/stage/StagePack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/stage/StagePack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,13 +54,16 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2O41NDJL3yxVoxiVaOlwmuH1MaC" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/takaf/ClassRoom/Syobon_RE/src/main/resources/assets/ayato/stage&quot;,
     &quot;project.structure.last.edited&quot;: &quot;モジュール&quot;,
@@ -389,7 +399,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683220749092</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Ver.Classic.0.22.0&#10;&#10;イベントブロック&#10;*イベントのトリガーを最初からtrueに、またfalseにする機構を作成した。">
+      <created>1683225477053</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1683225477053</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -404,7 +421,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ver.experiment.04.10.5&#10;&#10;ジャンプ機能をリニューアル&#10;マップの範囲外に出たとき、ゲームオーバーになる機能を追加&#10;ライフを追加" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Ver.experiment.04.11.1&#10;&#10;テクスチャを追加" />
     <MESSAGE value="Ver.experiment.04.11.2&#10;&#10;マップのスクロール機能を追加" />
     <MESSAGE value="Ver.Classic.0.1.0&#10;&#10;マップの選択画面の説明欄において、枠内に文字が収まるようなアルゴリズムを作成。&#10;バージョンをRDからClassicにアップ" />
@@ -429,7 +446,8 @@
     <MESSAGE value="Ver.Classic.0.20.0&#10;&#10;イベントブロック&#10;*ブロックの置き換えができるようになった。" />
     <MESSAGE value="Ver.Classic.0.20.0&#10;&#10;イベントブロック&#10;*複数のブロックの置き換えが可能になった&#10;*イベントの座標を指定する際、blockIDではなくXY座標で決めるシステムになった。" />
     <MESSAGE value="Ver.Classic.0.21.0&#10;&#10;イベントブロック&#10;*複数のブロックの置き換えが可能になった&#10;*イベントの座標を指定する際、blockIDではなくXY座標で決めるシステムになった。" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ver.Classic.0.21.0&#10;&#10;イベントブロック&#10;*複数のブロックの置き換えが可能になった&#10;*イベントの座標を指定する際、blockIDではなくXY座標で決めるシステムになった。" />
+    <MESSAGE value="Ver.Classic.0.22.0&#10;&#10;イベントブロック&#10;*イベントのトリガーを最初からtrueに、またfalseにする機構を作成した。" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ver.Classic.0.22.0&#10;&#10;イベントブロック&#10;*イベントのトリガーを最初からtrueに、またfalseにする機構を作成した。" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ActionSimulater$Main.ic" NAME="Main のカバレッジ結果" MODIFIED="1681066861805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

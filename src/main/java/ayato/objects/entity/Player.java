@@ -96,7 +96,7 @@ public class Player extends Entity {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            Main.getInstance().run(new Continue(stage.reaming, stage.pack, stage.stage));
+            Main.getInstance().run(new Continue(stage.reaming, stage));
 
         }));
     }

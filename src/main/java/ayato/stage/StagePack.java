@@ -43,4 +43,11 @@ public class StagePack {
     public void load() {
         Main.getInstance().run(new Stage(this, mainStage));
     }
+
+    public JsonNode serchSubMap(int loadMapID) {
+        for(JsonNode sub : subStage)
+            if(sub.get("meta").get("id").asInt() == loadMapID)
+                return sub;
+        return null;
+    }
 }

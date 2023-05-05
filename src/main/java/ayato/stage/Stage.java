@@ -7,10 +7,7 @@ import ayato.objects.block.BlockLoader;
 import ayato.objects.entity.Entity;
 import ayato.objects.entity.EntityLoader;
 import ayato.objects.entity.Player;
-import ayato.system.Background;
-import ayato.system.CodeToon;
-import ayato.system.KeyController;
-import ayato.system.NextTask;
+import ayato.system.*;
 import ayato.util.Action;
 import com.fasterxml.jackson.databind.JsonNode;
 
@@ -28,18 +25,30 @@ public class Stage extends Map {
     public ArrayList<Entity> entities;
     private ArrayList<Action> task = new ArrayList<>();
     public int reaming;
+    private Stage percentStage;
+    private Stage respawnStage;
+    private Point initialRespawn;
     public Stage(StagePack pack, JsonNode main){
+        System.out.println(this);
         this.pack = pack;
         stage = main;
         reaming = 5;
         stageX = 0;
         stageY = 0;
         w = stage.get("stage").get("width").asInt();
+        respawnStage = this;
+        initialRespawn = new Point(stage.get("stage").get("player").get("x").asInt(),stage.get("stage").get("player").get("y").asInt());
     }
     public Stage(StagePack pack, JsonNode main, int remaining){
         this(pack, main);
         this.reaming = remaining;
 
+    }
+    public Stage(StagePack pack, JsonNode stage,Stage percent){
+        this(pack, stage, percent.reaming);
+        percentStage = percent;
+        respawnStage = percentStage.respawnStage;
+        System.out.println(respawnStage);
     }
 
     @Override
@@ -48,7 +57,7 @@ public class Stage extends Map {
         CodeToon.BLOCK_HEIGHT = Main.DESCTOP_BOUNDS.height / 15;
         CodeToon.BLOCK_WIDTH = CodeToon.BLOCK_HEIGHT;
         player = new Player(stage.get("stage").get("player"));
-        blocks = BlockLoader.get(stage);
+        blocks = BlockLoader.get(pack, stage);
         entities = EntityLoader.get(stage);
         NextTask.generate();
 
@@ -88,5 +97,9 @@ public class Stage extends Map {
             blocks.remove(blockNumber);
             blocks.add(blockNumber, b);
         }
+    }
+
+    public void respawn() {
+        Main.getInstance().run(new Stage(pack, respawnStage.stage, reaming - 1));
     }
 }

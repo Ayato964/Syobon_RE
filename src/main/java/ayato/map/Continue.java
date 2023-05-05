@@ -14,12 +14,14 @@ import java.awt.event.KeyEvent;
 
 public class Continue extends Map{
     private int reaming;
+    private Stage stage;
     private StagePack pack;
     private JsonNode main;
-    public Continue(int reaming, StagePack pack, JsonNode node){
+    public Continue(int reaming, Stage stage){
+        this.stage = stage;
         this.reaming = reaming - 1;
-        this.pack = pack;
-        main = node;
+        this.pack = stage.pack;
+        main = stage.stage;
     }
     @Override
     public void setup(Graphics g) {
@@ -35,7 +37,7 @@ public class Continue extends Map{
     @Override
     public void display(Graphics g) {
         if(KeyController.get(KeyEvent.VK_SPACE) || KeyController.get(KeyEvent.VK_ENTER)){
-            Main.getInstance().run(new Stage(pack, main, reaming));
+            stage.respawn();
         }
 
     }

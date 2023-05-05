@@ -29,7 +29,7 @@ public abstract class Block extends MyObjects {
         super.display(g);
 
         if(stage.worldMoveMode){
-            if(KeyController.get(KeyEvent.VK_RIGHT))
+            if(KeyController.get(KeyEvent.VK_RIGHT) && stage.player.isRightVoid)
                 move(-1 * stage.player.speed);
         }
         if(x < -CodeToon.BLOCK_WIDTH)
