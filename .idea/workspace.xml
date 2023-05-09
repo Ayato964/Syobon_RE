@@ -4,17 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="Ver.Classic.0.22.0&#10;&#10;イベントブロック&#10;*イベントのトリガーを最初からtrueに、またfalseにする機構を作成した。">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_4/asset/icon/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_4/data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_4/under.json" afterDir="false" />
+    <list default="true" id="3651e6db-c221-4d65-bd76-d7c9b9b631e4" name="変更" comment="Ver.Classic.0.23.0&#10;&#10;*メインのマップから違うマップに移動することができるようになった。&#10;*移動先のマップで死亡した際、元居たマップに戻るようになった。">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Pipe_Carb_LeftToUp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Pipe_Top_Left.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/block/pipe_carb_left_to_up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/block/pipe_carb_right_to_down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/block/pipe_carb_up_to_right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/block/pipe_top_down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/block/pipe_top_left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/block/pipe_top_right.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/map/Continue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/map/Continue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/block/BlockLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/BlockLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Pipe_Top.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/block/Pipe_Top.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/objects/entity/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ayato/stage/Stage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/stage/Stage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ayato/stage/StagePack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ayato/stage/StagePack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_4/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_4/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_4/under.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/ayato/stage/Test_4/under.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -406,7 +410,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683225477053</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Ver.Classic.0.23.0&#10;&#10;*メインのマップから違うマップに移動することができるようになった。&#10;*移動先のマップで死亡した際、元居たマップに戻るようになった。">
+      <created>1683314954540</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1683314954541</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -422,7 +433,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Ver.experiment.04.11.1&#10;&#10;テクスチャを追加" />
     <MESSAGE value="Ver.experiment.04.11.2&#10;&#10;マップのスクロール機能を追加" />
     <MESSAGE value="Ver.Classic.0.1.0&#10;&#10;マップの選択画面の説明欄において、枠内に文字が収まるようなアルゴリズムを作成。&#10;バージョンをRDからClassicにアップ" />
     <MESSAGE value="Ver.Classic.0.3.0&#10;&#10;レンガブロック&#10;-&gt;下からジャンプすると、壊れる&#10;&#10;棘ブロック&#10;-&gt;どの方面でも、あたると死ぬ" />
@@ -447,7 +457,8 @@
     <MESSAGE value="Ver.Classic.0.20.0&#10;&#10;イベントブロック&#10;*複数のブロックの置き換えが可能になった&#10;*イベントの座標を指定する際、blockIDではなくXY座標で決めるシステムになった。" />
     <MESSAGE value="Ver.Classic.0.21.0&#10;&#10;イベントブロック&#10;*複数のブロックの置き換えが可能になった&#10;*イベントの座標を指定する際、blockIDではなくXY座標で決めるシステムになった。" />
     <MESSAGE value="Ver.Classic.0.22.0&#10;&#10;イベントブロック&#10;*イベントのトリガーを最初からtrueに、またfalseにする機構を作成した。" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ver.Classic.0.22.0&#10;&#10;イベントブロック&#10;*イベントのトリガーを最初からtrueに、またfalseにする機構を作成した。" />
+    <MESSAGE value="Ver.Classic.0.23.0&#10;&#10;*メインのマップから違うマップに移動することができるようになった。&#10;*移動先のマップで死亡した際、元居たマップに戻るようになった。" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ver.Classic.0.23.0&#10;&#10;*メインのマップから違うマップに移動することができるようになった。&#10;*移動先のマップで死亡した際、元居たマップに戻るようになった。" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ActionSimulater$Main.ic" NAME="Main のカバレッジ結果" MODIFIED="1681066861805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

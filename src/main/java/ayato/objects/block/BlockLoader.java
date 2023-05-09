@@ -48,7 +48,9 @@ public class BlockLoader {
             case 7->new ThornBall(x, y);
             case 8->new DieFlower(x, y);
             case 10->new Pipe_Top(x, y, node.get("events").get(bx + "x" + by), pack);
-            case 11->new Pipe_Tube(x, y);
+            case 11->new Pipe_Top_Left(x, y, node.get("events").get(bx + "x" + by), pack);
+            case 14->new Pipe_Tube(x, y);
+            case 16->new Pipe_Carb_LeftToUp(x, y);
             case 20->new Event(x, y, node.get("events").get(bx + "x" + by), node, number);
             case 99->new Home(x, y);
 

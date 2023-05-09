@@ -29,7 +29,6 @@ public class Stage extends Map {
     private Stage respawnStage;
     private Point initialRespawn;
     public Stage(StagePack pack, JsonNode main){
-        System.out.println(this);
         this.pack = pack;
         stage = main;
         reaming = 5;
@@ -48,7 +47,6 @@ public class Stage extends Map {
         this(pack, stage, percent.reaming);
         percentStage = percent;
         respawnStage = percentStage.respawnStage;
-        System.out.println(respawnStage);
     }
 
     @Override
